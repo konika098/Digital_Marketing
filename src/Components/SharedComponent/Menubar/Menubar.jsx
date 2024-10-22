@@ -22,12 +22,12 @@ const Menubar = () => {
                   Home
                 </Nav.Link>
                 <Nav.Link href="./about">About us</Nav.Link>
-                <Nav.Link href="./service.html">Our Services</Nav.Link>
-                <Nav.Link href="./blog.html">Blog</Nav.Link>
-                <Nav.Link href="./contact.html">Contact</Nav.Link>
+                <Nav.Link href="./service">Our Services</Nav.Link>
+                <Nav.Link href="./blog">Blog</Nav.Link>
+                <Nav.Link href="./contact">Contact</Nav.Link>
               </Nav>
               <Form className="d-flex">
-                <Button href="./contact.html" variant="outline-primary" className="get-started-btn">
+                <Button href="./contact" variant="outline-primary" className="get-started-btn">
                   Get Started
                 </Button>
               </Form>
