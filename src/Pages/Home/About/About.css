@@ -1,0 +1,44 @@
+.about-section {
+    padding: 140px 0;
+}
+
+.about-area img {
+    border-radius: 51px;
+}
+
+.about-img {
+    max-width: 574px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 51px;
+}
+
+.about-img img {
+    border-radius: 51px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.about-img img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.about-sub {
+    color: #260058;
+    border-radius: 100px;
+    background: var(--Color-04, #F9F4FF);
+    padding: 10px 30px;
+}
+
+.about-text {
+    color: var(--Text-Color-02, #595959);
+    padding: 43px 0 51px 0;
+}
+
+.child {
+    display: flex;
+    gap: 18px;
+    padding-bottom: 36px;
+}

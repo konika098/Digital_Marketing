@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container, Button, Form } from 'react-bootstrap';
+import './Menubar.css'; 
 
 const Menubar = () => {
   return (
@@ -20,13 +21,13 @@ const Menubar = () => {
                 <Nav.Link href="./index.html" className="active">
                   Home
                 </Nav.Link>
-                <Nav.Link href="./about.html">About us</Nav.Link>
+                <Nav.Link href="./about">About us</Nav.Link>
                 <Nav.Link href="./service.html">Our Services</Nav.Link>
                 <Nav.Link href="./blog.html">Blog</Nav.Link>
                 <Nav.Link href="./contact.html">Contact</Nav.Link>
               </Nav>
               <Form className="d-flex">
-                <Button href="./contact.html" variant="success">
+                <Button href="./contact.html" variant="outline-primary" className="get-started-btn">
                   Get Started
                 </Button>
               </Form>

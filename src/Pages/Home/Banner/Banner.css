@@ -1,0 +1,92 @@
+.hero__section {
+    padding: 80px 0 130px 0;
+    background: radial-gradient(136.17% 136.17% at 50% 100%, #E9D9FF 15.25%, rgba(255, 255, 255, 0) 100%);
+    overflow-x: hidden;
+}
+
+.hero-title {
+    color: #260058;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.hero-title-2 {
+    color: #260058;
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    color: #2E2E2E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 50px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.client-info {
+    color: #2E2E2E;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 50px 0 20px;
+}
+
+#bars {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    height: 10px;
+    width: 180px;
+    transform: scale(2) translateX(-50%);
+}
+
+.bar {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 1px;
+    background: #C9BBEE;
+    animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+        opacity: .35;
+        height: 3px;
+    }
+    100% {
+        opacity: 1;
+        height: 28px;
+    }
+}
+
+.hero-left-side img {
+    margin-left: -20%;
+    margin-top: 18px;
+    max-width: 140%;
+}
+
+.imgOne, .imgTwo {
+    box-shadow: 0px 47px 28px rgba(0, 0, 0, 0.05), 0px 84px 33px rgba(0, 0, 0, 0.01), 0px 131px 37px rgba(0, 0, 0, 0.00);
+}
+
+img.animatedImg {
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}

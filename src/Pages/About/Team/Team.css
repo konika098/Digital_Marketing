@@ -1,0 +1,35 @@
+.team-section {
+    padding: 140px 0; /* Adjust as needed */
+}
+
+.team-area,
+.team-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-area {
+    justify-content: space-evenly;
+}
+
+.team-text {
+    padding: 24px 0 48px 0;
+}
+
+.team-area-one {
+    margin-bottom: 83px;
+}
+
+.team-child {
+    text-align: center;
+}
+
+.fs-32-c {
+    padding: 24px 0 2px;
+}
+
+.purple-btn-parent {
+    text-align: center;
+    margin-top: 48px;
+}

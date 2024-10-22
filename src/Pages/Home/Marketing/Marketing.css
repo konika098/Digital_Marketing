@@ -1,0 +1,47 @@
+.marketing-section {
+    background: var(--Primary-Color, #260058);
+    padding: 93px 0 184px 0;
+}
+
+.five {
+    border-radius: 32px;
+    background: #8E39FF;
+    padding: 56px 60px 60px 60px;
+}
+
+.seven {
+    border-radius: 32px;
+    background: #D3D3FF;
+    padding: 56px 81px 0 81px;
+}
+
+.twelve {
+    border-radius: 32px;
+    background: #F7F1FF;
+    padding: 68px 68px 0 68px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Additional styles for text and images */
+.fs-52-w {
+    font-size: 52px; /* Adjust as needed */
+    font-weight: 700; /* Adjust as needed */
+}
+
+.fs-32-w, .fs-32-c {
+    font-size: 32px; /* Adjust as needed */
+    font-weight: 600; /* Adjust as needed */
+}
+
+.fs-18-w, .fs-18-c, .market-text {
+    font-size: 18px; /* Adjust as needed */
+    font-weight: 400; /* Adjust as needed */
+}
+
+.simple {
+    color: #fff; /* Default color, adjust as needed */
+    cursor: pointer;
+}

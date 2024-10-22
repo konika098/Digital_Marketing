@@ -1,0 +1,52 @@
+.seo-section {
+    padding: 147px 0;
+}
+
+.seo-img {
+    max-width: 574px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 51px;
+}
+
+.seo-img img {
+    border-radius: 51px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.seo-img img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.seo-sub {
+    background: #F9F4FF !important;
+}
+
+.seo-title {
+    font-size: 49px;
+    margin-top: 24px;
+}
+
+.seo-text {
+    padding: 24px 0 32px 0;
+}
+
+.seo-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 30px 25px;
+    border-radius: 21px;
+    border: 1px solid var(--Line-Color-01, #EEE);
+    background: var(--Neutral-Color, #FFF);
+}
+
+.seo-card:hover {
+    border: 1px solid #fff;
+    box-shadow: 10px 10px 24px 0px rgba(38, 0, 88, 0.05);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}

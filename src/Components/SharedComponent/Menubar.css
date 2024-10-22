@@ -1,0 +1,66 @@
+.menubar__section {
+    background: #fff !important;
+    border-bottom: 1px solid var(--Line-Color-02, #F2F2F2);
+  }
+  
+  .bg-light {
+    --bs-bg-opacity: 0;
+    background: #fff !important;
+  }
+  
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .navbar-brand img {
+    width: 120px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #260058; /* Purple for inactive links */
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 25px;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #ae72ff; /* Lighter purple for active link */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ae72ff; /* Lighter purple on hover */
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: unset;
+    color: #e1cbff;
+    font-size: 28px !important;
+  }
+  
+  .get-started-btn {
+    border: 2px solid #260058; /* Border color for the button */
+    color: #260058; /* Button text color */
+    border-radius: 50px; /* Rounded corners */
+    padding: 5px 20px;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #260058;
+    color: #fff; /* Text color when hovered */
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-toggler-icon {
+      color: #ae72ff;
+    }
+  }
+  
