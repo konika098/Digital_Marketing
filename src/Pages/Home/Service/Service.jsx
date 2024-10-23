@@ -1,5 +1,4 @@
 import  { useEffect, useState } from 'react';
-import './Service.css'; 
 
 const Service = () => {
   const [serviceContent, setServiceContent] = useState(null);

@@ -1,6 +1,3 @@
-import React from 'react';
-import './Help.css'; // Ensure you import your CSS file
-
 const Help = () => {
   return (
     <div className="helping-section">

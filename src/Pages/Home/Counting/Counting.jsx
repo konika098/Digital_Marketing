@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './Counting.css'; 
 
 const Counting = () => {
   const [countData, setCountData] = useState([]);

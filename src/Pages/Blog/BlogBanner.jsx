@@ -1,6 +1,3 @@
-import React from 'react';
-import './BlogBanner.css';
-
 const BlogBanner = () => {
   return (
     <div className="blog-page-section">

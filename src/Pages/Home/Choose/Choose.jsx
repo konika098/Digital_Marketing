@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import './Choose.css'; 
+import { useEffect, useState } from 'react'; 
 import tick from "/public/assets/tick.png";
 import ChooseImg from "/public/assets/choose-img.png";
 

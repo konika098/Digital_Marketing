@@ -1,6 +1,6 @@
-import about from '../../../../public/assets/about-img-1.png';
-import about2 from '../../../../public/assets/about-img-2.png';
-import './Trust.css'; 
+import about from '/public/assets/about-img-1.png';
+import about2 from '/public/assets/about-img-2.png';
+
 
 const Trust = () => {
     return (

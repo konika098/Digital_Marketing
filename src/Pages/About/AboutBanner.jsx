@@ -1,5 +1,4 @@
-import './AboutBanner.css'; 
-import AboutBg from "../../../../public/assets/about-bg.png"
+import AboutBg from "/public/assets/about-bg.png"
 
 const AboutBanner = () => {
     return (

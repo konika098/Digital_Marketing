@@ -1,6 +1,5 @@
-import React from 'react';
-import Email from '../Home/Email/Email';
-import BlogBanner from './BlogBanner/BlogBanner';
+import Email from '../../Components/Email';
+import BlogBanner from './BlogBanner';
 import BlogSection from './BlogSection/BlogSection';
 
 const Blog = () => {

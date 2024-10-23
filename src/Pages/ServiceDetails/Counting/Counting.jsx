@@ -1,6 +1,3 @@
-import React from "react";
-import "./Counting.css"; // Import the CSS file for styling
-
 const Counting = () => {
   return (
     <div className="counting-section service-details">

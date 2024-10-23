@@ -1,6 +1,3 @@
-import React from "react";
-import "./ServiceDetailsBanner.css"; 
-
 const ServiceDetailsBanner = () => {
   return (
     <div className="service-detaile-section">

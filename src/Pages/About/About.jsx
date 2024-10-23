@@ -1,10 +1,10 @@
-import AboutBanner from './AboutBanner/AboutBanner';
-import Trust from './Trust/Trust';
+import AboutBanner from './AboutBanner';
+import Trust from './Trust';
 import Seo from './Seo/Seo';
 import Counting from '../Home/Counting/Counting';
-import Service from './Service/Service';
-import Team from './Team/Team';
-import Email from '../../Components/Email/Email';
+import Service from './Service';
+import Team from './Team';
+import Email from '../../Components/Email';
 
 const About = () => {
     return (

@@ -1,4 +1,3 @@
-import './Team.css'; 
 import teamMembers from '/public/Team.json'; 
 
 const Team = () => {

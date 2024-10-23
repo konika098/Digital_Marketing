@@ -1,6 +1,3 @@
-import React from "react";
-import "./Specialize.css"; // Import the CSS file for styling
-
 const Specialize = () => {
   return (
     <div className="specialize-section">

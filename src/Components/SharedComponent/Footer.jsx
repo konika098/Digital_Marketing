@@ -1,6 +1,5 @@
 import  { useEffect, useState } from 'react';
-import './Footer.css';
-import footerLogo from "../../../../public/assets/footer-logo.png";
+import footerLogo from "/public/assets/footer-logo.png";
 
 const Footer = () => {
     const [footerMenus, setFooterMenus] = useState([]);

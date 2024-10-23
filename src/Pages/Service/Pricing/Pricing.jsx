@@ -1,12 +1,10 @@
 import  { useEffect, useState } from "react";
-import pricingData from "/public/Pricing.json"; // Adjust the path as necessary
-import "./Pricing.css"; // Import your CSS file
+import pricingData from "/public/Pricing.json"; 
 
 const Pricing = () => {
   const [plans, setPlans] = useState([]);
 
   useEffect(() => {
-    // Simulate fetching data
     setPlans(pricingData);
   }, []);
 

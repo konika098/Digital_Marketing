@@ -1,6 +1,3 @@
-import React from 'react';
-import './Email.css'; // Assuming you will place your CSS in this file
-
 const Email = () => {
     return (
         <div className="email__section">

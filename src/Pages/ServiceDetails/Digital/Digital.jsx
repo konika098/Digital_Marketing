@@ -1,7 +1,3 @@
-// Digital.jsx
-import React from "react";
-import "./Digital.css"; // Import the CSS file for styling
-
 const Digital = () => {
   return (
     <section className="service-section serv-detl-res overflow-hidden">

@@ -1,5 +1,3 @@
-
-import './ServiceBanner.css';
 import serviceBanner from "/public/assets/service-bg.png"
 
 const ServiceBanner = () => {

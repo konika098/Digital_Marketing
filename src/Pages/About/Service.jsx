@@ -1,4 +1,4 @@
-import './Service.css';
+
 import serviceData from '/public/AboutService.json'; 
 
 const Service = () => {

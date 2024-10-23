@@ -1,7 +1,5 @@
 import seoData from '/public/Seo.json'; 
 import seo5 from '/public/assets/seo-bg.png';
- 
-import './Seo.css'; 
 import SeoCard from './SeoCard';
 
 const Seo = () => {

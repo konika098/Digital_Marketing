@@ -1,4 +1,3 @@
-import './Testimonial.css'; 
 import testimonialsData from '/public/Testimonial.json'; 
 
 

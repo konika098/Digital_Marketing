@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './About.css';
 
 const About = () => {
   const [aboutContent, setAboutContent] = useState(null);

@@ -1,4 +1,3 @@
-import './Blog.css';
 import blogsData from '/public/Blog.json'; 
 import angelIcon from "/public/assets/angel-icon.png"
 

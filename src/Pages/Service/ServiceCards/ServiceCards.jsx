@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './ServiceCards.css'; 
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import servicesData from '/public/ServiceSection.json';

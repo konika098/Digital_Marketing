@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import './Marketing.css'; 
+import { useEffect, useState } from 'react'; 
 
 const Marketing = () => {
   const [marketingData, setMarketingData] = useState(null);

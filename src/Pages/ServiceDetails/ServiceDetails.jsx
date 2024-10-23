@@ -1,10 +1,11 @@
-import React from 'react';
+
 import ServiceDetailsBanner from './ServiceBanner/ServiceDetailsBanner';
 import Counting from './Counting/Counting';
 import Specialize from './Specialize/Specialize';
 import Digital from './Digital/Digital';
 import Help from './Help/Help';
-import Email from '../Home/Email/Email';
+import Email from '../../Components/Email';
+
 
 const ServiceDetails = () => {
     return (
