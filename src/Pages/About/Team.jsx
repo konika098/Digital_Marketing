@@ -5,22 +5,10 @@ const Team = () => {
         <div className="team-section">
             <div className="container">
                 <div className="top-content">
-                    <h2 className="fs-52-c res-425"
-                        data-aos="fade-up"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-once="false">
+                    <h2 className="fs-52-c res-425">
                         Meet the team
                     </h2>
-                    <p className="fs-18-s team-text"
-                        data-aos="fade-up"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-once="false">
+                    <p className="fs-18-s team-text">
                         Find a team of digital marketers you can rely on. Every day, we <br className="d-none d-md-block" />
                         build trust through communication, transparency, and results.
                     </p>
@@ -34,13 +22,7 @@ const Team = () => {
                                     <img className="img-fluid" 
                                         src={member.image} 
                                         alt={member.name} 
-                                        loading="lazy" 
-                                        data-aos="zoom-in"
-                                        data-aos-offset="200"
-                                        data-aos-delay={50 + teamMembers.indexOf(member) * 100} 
-                                        data-aos-duration="1000"
-                                        data-aos-easing="ease-in-out"
-                                        data-aos-once="false" />
+                                        loading="lazy" />
                                 </div>
                                 <h3 className="fs-32-c">{member.name}</h3>
                                 <p className="fs-24-s">{member.role}</p>
@@ -56,14 +38,7 @@ const Team = () => {
                                 <div className="team-img">
                                     <img className="img-fluid" 
                                         src={member.image} 
-                                        alt={member.name} 
-                                        loading="lazy" 
-                                        data-aos="zoom-in"
-                                        data-aos-offset="200"
-                                        data-aos-delay={50 + teamMembers.indexOf(member) * 100} 
-                                        data-aos-duration="1000"
-                                        data-aos-easing="ease-in-out"
-                                        data-aos-once="false" />
+                                        alt={member.name} />
                                 </div>
                                 <h3 className="fs-32-c">{member.name}</h3>
                                 <p className="fs-24-s">{member.role}</p>

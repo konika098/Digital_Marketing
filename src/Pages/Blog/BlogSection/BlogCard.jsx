@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const BlogCard = ({ blog }) => {
     return (
@@ -12,7 +12,7 @@ const BlogCard = ({ blog }) => {
             </div>
             <div className="blog-sub-2-parent">
                 <p className="fs-32-c text-start">{blog.title}</p>
-                <a href="#"><img className="img-fluid" src="./assets/images/angel-icon.png" alt="icon" /></a>
+                <a href="#"><img className="img-fluid" src="/public/assets/angel-icon.png" alt="icon" /></a>
             </div>
         </div>
     );

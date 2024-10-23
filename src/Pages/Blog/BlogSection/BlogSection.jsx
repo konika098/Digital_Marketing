@@ -1,16 +1,16 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import BlogCard from './BlogCard';
 import Pagination from './Pagination';
 
 const BlogSection = () => {
-    const blogs = [
-        { id: 1, title: "How To Create A Modern That Attracts Customers?", category: "Marketing", readTime: "2 min read", image: "./assets/images/blog-img-1.png" },
-        { id: 2, title: "How To Create A Modern That Attracts Customers?", category: "Marketing", readTime: "2 min read", image: "./assets/images/blog-img-2.png" },
-        { id: 3, title: "How To Create A Modern That Attracts Customers?", category: "Marketing", readTime: "2 min read", image: "./assets/images/blog-img-1.png" },
-        { id: 4, title: "How To Create A Modern That Attracts Customers?", category: "Marketing", readTime: "2 min read", image: "./assets/images/blog-img-2.png" },
-        { id: 5, title: "How To Create A Modern That Attracts Customers?", category: "Marketing", readTime: "2 min read", image: "./assets/images/blog-img-1.png" },
-        { id: 6, title: "How To Create A Modern That Attracts Customers?", category: "Marketing", readTime: "2 min read", image: "./assets/images/blog-img-2.png" },
-    ];
+    const [blogs, setBlogs] = useState([]);
+
+    useEffect(() => {
+        fetch('/Blogs.json')
+            .then(response => response.json())
+            .then(data => setBlogs(data))
+            .catch(error => console.error('Error fetching blog data:', error));
+    }, []);
 
     return (
         <div className="blog-section">

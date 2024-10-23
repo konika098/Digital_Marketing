@@ -24,7 +24,7 @@ const Seo = () => {
                                             altText={card.altText}
                                             title={card.title}
                                             description={card.description}
-                                            aosProps={card.dataAos}
+                                         
                                         />
                                     </div>
                                 ))}

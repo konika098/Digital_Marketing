@@ -7,12 +7,6 @@ const BlogBanner = () => {
           <h3
             className="fs-52-c"
             style={{ marginTop: '24px' }}
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-once="false"
           >
             We Provide Awesome Digital
             <br className="d-none d-xl-block" />

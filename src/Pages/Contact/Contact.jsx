@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Contact = () => {
   return (
     <div className="contact-section">
@@ -7,7 +5,7 @@ const Contact = () => {
         <div className="contact-area">
           <div className="row">
             <div className="col-lg-5">
-              <h2 className="fs-52-c">Ready to get started? Let's chat</h2>
+              <h2 className="fs-52-c">{`Ready to get started? Let's chat`}</h2>
               <div className="info-parent">
                 <div className="info-child">
                   <i className="fa-solid fa-location-dot"></i>

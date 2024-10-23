@@ -38,14 +38,7 @@ const Service = () => {
           {serviceContent.cards.map((card, index) => (
             <div className="col-md-6 col-lg-4" key={index}>
               <a href={card.link}>
-                <div className="new_card" 
-                  data-aos={card.aos.animation}
-                  data-aos-offset={card.aos.offset}
-                  data-aos-delay={card.aos.delay}
-                  data-aos-duration={card.aos.duration}
-                  data-aos-easing={card.aos.easing}
-                  data-aos-once="false"
-                >
+                <div className="new_card" >
                   <div className="new-card-img-top">
                     <img className="img-fluid" src={card.image} alt={card.title} />
                   </div>

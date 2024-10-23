@@ -6,7 +6,7 @@ const Specialize = () => {
           <div className="row align-items-center">
             <div className="col-lg-5">
               <div className="specialize-img all-img-scale">
-                <img className="img-fluid" src="./assets/images/service-details-img.png" alt="img" />
+                <img className="img-fluid" src="/public/assets/service-details-img.png" alt="img" />
               </div>
             </div>
             <div className="col-lg-7 ps-lg-5">
@@ -19,7 +19,7 @@ const Specialize = () => {
                 <br className="d-none d-xl-block" />
                 Enthusiastically negotiate highly efficient manufactured products whereas distributed services. Conveniently impact e-business
               </p>
-              <a href="./contact.html" className="btn btn-success dark dark-2">
+              <a href="/contact" className="btn btn-success dark dark-2">
                 Contact Us
               </a>
             </div>

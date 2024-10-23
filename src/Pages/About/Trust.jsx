@@ -36,21 +36,9 @@ const Trust = () => {
                                     className="img-fluid" 
                                     src={about} 
                                     alt="Trust Image 1"
-                                    data-aos="fade-right"
-                                    data-aos-offset="200"
-                                    data-aos-delay="50"
-                                    data-aos-duration="1000"
-                                    data-aos-easing="ease-in-out"
-                                    data-aos-once="false"
                                 />
                                 <p 
                                     className="fs-18 about-text" 
-                                    data-aos="fade-up"
-                                    data-aos-offset="200"
-                                    data-aos-delay="50"
-                                    data-aos-duration="1300"
-                                    data-aos-easing="ease-in-out"
-                                    data-aos-once="false"
                                 />
                             </div>
                         </div>
@@ -59,22 +47,10 @@ const Trust = () => {
                                 <img 
                                     className="img-fluid" 
                                     src={about2}
-                                    alt="Trust Image 2"
-                                    data-aos="fade-left"
-                                    data-aos-offset="200"
-                                    data-aos-delay="50"
-                                    data-aos-duration="1000"
-                                    data-aos-easing="ease-in-out"
-                                    data-aos-once="false"
+                                    alt="Trust Image 2"              
                                 />
                                 <p 
-                                    className="fs-18 about-text" 
-                                    data-aos="fade-up"
-                                    data-aos-offset="200"
-                                    data-aos-delay="50"
-                                    data-aos-duration="1300"
-                                    data-aos-easing="ease-in-out"
-                                    data-aos-once="false"
+                                    className="fs-18 about-text"
                                 />
                             </div>
                         </div>

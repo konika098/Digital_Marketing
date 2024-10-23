@@ -11,13 +11,7 @@ const Testimonial = () => {
                     </div>
                     <h3
                         className="fs-52-c text-center"
-                        style={{ margin: '30px 0' }}
-                        data-aos="fade-up"
-                        data-aos-offset="200"
-                        data-aos-delay="50"
-                        data-aos-duration="1000"
-                        data-aos-easing="ease-in-out"
-                        data-aos-once="false"
+                        style={{ margin: '30px 0' }} 
                     >
                         What Our Clients Are
                         <br className="d-none d-md-block" />
@@ -28,12 +22,6 @@ const Testimonial = () => {
                         {testimonialsData.map((testimonial, index) => (
                             <div
                                 className="tst-wrapper"
-                                data-aos={testimonial.aos}
-                                data-aos-offset="200"
-                                data-aos-delay="50"
-                                data-aos-duration="1200"
-                                data-aos-easing="ease-in-out"
-                                data-aos-once="false"
                                 key={index}
                             >
                                 <img className="quote" src={testimonial.quoteImage} alt="Quote icon" />

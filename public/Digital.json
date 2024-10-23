@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Campaign Working",
+      "text": "Risus ultrices risus lorem. Mollis libero into Tate ut aliquam, consecteturs.",
+      "image": "/public/assets/card-img-1.png"
+    },
+    {
+      "id": 2,
+      "title": "Content Strategy",
+      "text": "Risus ultrices risus lorem. Mollis libero into Tate ut aliquam, consecteturs.",
+      "image": "/public/assets/card-img-2.png"
+    },
+    {
+      "id": 3,
+      "title": "Social Media Boosting",
+      "text": "Risus ultrices risus lorem. Mollis libero into Tate ut aliquam, consecteturs.",
+      "image": "/public/assets/card-img-3.png"
+    }
+  ]
+  
