@@ -1,0 +1,43 @@
+.blog-page-section {
+    padding: 93px 0 100px 0;
+}
+
+.blog-page-area {
+    text-align: center;
+}
+
+.about-sub, .seo-sub {
+    color: #260058;
+    border-radius: 100px;
+    font-weight: 500;
+    background: #F0E3FF;
+    padding: 10px 30px;
+}
+
+.about-text {
+    color: var(--Text-Color-02, #2E2E2E);
+    padding: 24px 0 48px 0;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #E1CBFF;
+    border-radius: 100px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.search-btn input {
+    border: none;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.search-btn i {
+    color: #2E2E2E;
+}

@@ -1,5 +1,5 @@
-import React from 'react';
-import './Service.css'; // Assuming you'll place your CSS in this file
+import './Service.css';
+import serviceData from '/public/AboutService.json'; 
 
 const Service = () => {
     return (
@@ -27,57 +27,25 @@ const Service = () => {
                             build trust through communication, transparency, and results.
                         </p>
                     </div>
-
-                    {/* Card Section */}
                     <div className="row">
-                        <div className="col-md-6 col-lg-4">
-                            <div className="new_card card-res"
-                                data-aos="fade-right"
-                                data-aos-offset="200"
-                                data-aos-delay="50"
-                                data-aos-duration="1200"
-                                data-aos-easing="ease-in-out"
-                                data-aos-once="false">
-                                <div className="new-card-img-top">
-                                    <img className="img-fluid first" src="./assets/images/card-icon-1-ho.png" alt="Transparency" />
-                                    <img className="img-fluid second" src="./assets/images/card-icon-1.png" alt="Transparency" />
+                        {serviceData.map(card => (
+                            <div key={card.id} className="col-md-6 col-lg-4">
+                                <div className="new_card card-res"
+                                    data-aos={card.id === 1 ? "fade-right" : card.id === 2 ? "fade-up" : "fade-left"}
+                                    data-aos-offset="200"
+                                    data-aos-delay="50"
+                                    data-aos-duration="1200"
+                                    data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
+                                    <div className="new-card-img-top">
+                                        <img className="img-fluid first" src={card.imgSrcHover} alt={card.altText} />
+                                        <img className="img-fluid second" src={card.imgSrc} alt={card.altText} />
+                                    </div>
+                                    <h5 className="card-title">{card.title}</h5>
+                                    <p className="fs-18-s">{card.description}</p>
                                 </div>
-                                <h5 className="card-title">Transparency</h5>
-                                <p className="fs-18-s">Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.</p>
                             </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4">
-                            <div className="new_card card-res"
-                                data-aos="fade-up"
-                                data-aos-offset="200"
-                                data-aos-delay="50"
-                                data-aos-duration="1400"
-                                data-aos-easing="ease-in-out"
-                                data-aos-once="false">
-                                <div className="new-card-img-top">
-                                    <img className="img-fluid first" src="./assets/images/card-icon-2-ho.png" alt="Experienced" />
-                                    <img className="img-fluid second" src="./assets/images/card-icon-2.png" alt="Experienced" />
-                                </div>
-                                <h5 className="card-title">Experienced</h5>
-                                <p className="fs-18-s">Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.</p>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4">
-                            <div className="new_card card-res"
-                                data-aos="fade-left"
-                                data-aos-offset="200"
-                                data-aos-delay="50"
-                                data-aos-duration="1200"
-                                data-aos-easing="ease-in-out"
-                                data-aos-once="false">
-                                <div className="new-card-img-top">
-                                    <img className="img-fluid first" src="./assets/images/card-icon-3-ho.png" alt="Result Guarantee" />
-                                    <img className="img-fluid second" src="./assets/images/card-icon-3.png" alt="Result Guarantee" />
-                                </div>
-                                <h5 className="card-title">Result Guarantee</h5>
-                                <p className="fs-18-s">Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.</p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
