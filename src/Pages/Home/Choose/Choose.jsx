@@ -1,7 +1,23 @@
-import React from 'react';
-import './Choose.css'; // Create this CSS file or use a CSS module
+import React, { useEffect, useState } from 'react';
+import './Choose.css'; 
+import tick from "/public/assets/tick.png";
+import ChooseImg from "/public/assets/choose-img.png";
 
 const Choose = () => {
+  const [chooseData, setChooseData] = useState(null);
+
+  useEffect(() => {
+    fetch('/Choose.json')
+      .then((response) => response.json())
+      .then((data) => setChooseData(data))
+      .catch((error) => console.error('Error fetching choose data:', error));
+  }, []);
+
+
+  if (!chooseData) {
+    return <div>Loading...</div>; 
+  }
+
   return (
     <div className="choose-section">
       <div className="container">
@@ -10,21 +26,23 @@ const Choose = () => {
             <div className="col-lg-6">
               <span className="fs-18 about-sub">Why Choose Us</span>
               <h3 className="fs-52-c" style={{ marginTop: '24px' }}>
-                Reach Customers & <br className="d-none d-xl-block" />
-                Prospects Across The Entire
+                {chooseData.heading.split('\n').map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    <br className={index === 0 ? "d-none d-xl-block" : ""} />
+                  </span>
+                ))}
               </h3>
               <p className="fs-18 about-text">
-                Digital marketing refers to the practice of promoting products or services using digital technologies, primarily on the internet. This can include a range of techniques, such as social media marketing, search engine optimization (SEO), email marketing, pay-per-click advertising, and content marketing.
+                {chooseData.description}
               </p>
 
-              <div className="child" style={{ paddingBottom: '24px' }}>
-                <img className="img-fluid" src="./assets/images/tick.png" alt="img" />
-                <p className="fs-18-c res-375">Easily Customize Your Follow-up Campaigns</p>
-              </div>
-              <div className="child" style={{ paddingBottom: '32px' }}>
-                <img className="img-fluid" src="./assets/images/tick.png" alt="img" />
-                <p className="fs-18-c res-375">Power Your Revenue With Email & Sms Marketing</p>
-              </div>
+              {chooseData.points.map((point, index) => (
+                <div className="child" style={{ paddingBottom: index === chooseData.points.length - 1 ? '32px' : '24px' }} key={index}>
+                  <img className="img-fluid" src={tick} alt="img" />
+                  <p className="fs-18-c res-375">{point}</p>
+                </div>
+              ))}
 
               <a href="./contact.html" className="btn btn-success dark">Contact Us</a>
             </div>
@@ -33,7 +51,7 @@ const Choose = () => {
 
             <div className="col-lg-5">
               <div className="choose-img">
-                <img className="img-fluid" src="./assets/images/choose-img.png" alt="img" />
+                <img className="img-fluid" src={ChooseImg} alt="img" />
               </div>
             </div>
           </div>

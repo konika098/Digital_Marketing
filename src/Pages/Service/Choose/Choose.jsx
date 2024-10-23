@@ -1,7 +1,25 @@
-import React from 'react';
-import './Choose.css'; // Make sure to include your CSS file
+import  { useEffect, useState } from 'react';
+import './Choose.css';
+import ChooseItem from './ChooseItem';
+
 
 const Choose = () => {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/ChooseUs.json');
+        const data = await response.json();
+        setItems(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="choose-section">
       <div className="container">
@@ -19,18 +37,9 @@ const Choose = () => {
                 advertising, and content marketing.
               </p>
 
-              <div className="choose-child">
-                <img className="img-fluid" src="./assets/images/tick.png" alt="Tick Icon" />
-                <p className="fs-22-c res-375">At vero eos et accusamu areg ghae</p>
-              </div>
-              <div className="choose-child">
-                <img className="img-fluid" src="./assets/images/tick.png" alt="Tick Icon" />
-                <p className="fs-22-c res-375">qui blanditiis praesentium volupta</p>
-              </div>
-              <div className="choose-child">
-                <img className="img-fluid" src="./assets/images/tick.png" alt="Tick Icon" />
-                <p className="fs-22-c res-375">qui blanditiis praesentium volupta</p>
-              </div>
+              {items.map((item, index) => (
+                <ChooseItem key={index} text={item.text} />
+              ))}
 
               <a href="#" className="btn btn-success dark dark-3">Discover More</a>
             </div>
@@ -39,7 +48,7 @@ const Choose = () => {
 
             <div className="col-lg-5">
               <div className="choose-img">
-                <img className="img-fluid" src="./assets/images/agency-bg.png" alt="Agency Background" />
+                <img className="img-fluid" src="/public/assets/agency-bg.png" alt="Agency Background" />
               </div>
             </div>
           </div>

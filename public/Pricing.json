@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "title": "Basic",
+      "amount": "$5.9",
+      "description": "Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "icon": "/public/assets/basic-icon.png",
+      "features": [
+        "Technical SEO",
+        "Search Marketing",
+        "Link Building"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Standard",
+      "amount": "$17.9",
+      "description": "Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "icon": "/public/assets/standard-icon.png",
+      "features": [
+        "Content Strategy",
+        "Google Analytics",
+        "Conversion Booster"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Expert",
+      "amount": "$29.9",
+      "description": "Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "icon": "/public/assets/expert-icon.png",
+      "features": [
+        "Pay Per Click",
+        "Digital Marketing",
+        "Website Design"
+      ]
+    }
+  ]
+  

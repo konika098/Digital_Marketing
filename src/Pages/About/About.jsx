@@ -1,4 +1,3 @@
-import React from 'react';
 import AboutBanner from './AboutBanner/AboutBanner';
 import Trust from './Trust/Trust';
 import Seo from './Seo/Seo';

@@ -1,5 +1,6 @@
-import React from 'react';
-import './ServiceBanner.css'; // Assuming you'll place your CSS in this file
+
+import './ServiceBanner.css';
+import serviceBanner from "/public/assets/service-bg.png"
 
 const ServiceBanner = () => {
     return (
@@ -19,7 +20,7 @@ const ServiceBanner = () => {
                         <div className="col-lg-1 col-xl-1"></div>
                         <div className="col-lg-6 col-xl-7">
                             <div className="integrate-img">
-                                <img className="img-fluid" src="./assets/images/service-bg.png" alt="Integrated Digital Marketing" />
+                                <img className="img-fluid" src={serviceBanner} alt="Integrated Digital Marketing" />
                             </div>
                         </div>
                     </div>
