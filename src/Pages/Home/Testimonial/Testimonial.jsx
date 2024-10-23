@@ -1,25 +1,6 @@
-import React from 'react';
-import './Testimonial.css'; // Import the CSS file
+import './Testimonial.css'; 
+import testimonialsData from '/public/Testimonial.json'; 
 
-const testimonials = [
-    {
-        quote: "High standard and excellent quality of work. They helped my business grow in digital.",
-        name: "Adam Watson",
-        role: "Digital Marketer",
-        ratingImage: "./assets/images/rating.png",
-        quoteImage: "./assets/images/quote.png",
-        aos: "fade-right"
-    },
-    {
-        quote: "Awesome work! High standard and excellent quality. They helped my business grow in digital.",
-        name: "Eloise Smith",
-        role: "Content Marketer",
-        ratingImage: "./assets/images/rating.png",
-        quoteImage: "./assets/images/quote.png",
-        aos: "fade-up"
-    },
-    // Add more testimonials as needed...
-];
 
 const Testimonial = () => {
     return (
@@ -45,7 +26,7 @@ const Testimonial = () => {
                     </h3>
 
                     <div className="testimonial-slider-class">
-                        {testimonials.map((testimonial, index) => (
+                        {testimonialsData.map((testimonial, index) => (
                             <div
                                 className="tst-wrapper"
                                 data-aos={testimonial.aos}
@@ -56,10 +37,10 @@ const Testimonial = () => {
                                 data-aos-once="false"
                                 key={index}
                             >
-                                <img className="quote" src={testimonial.quoteImage} alt="quote" />
+                                <img className="quote" src={testimonial.quoteImage} alt="Quote icon" />
                                 <p className="fs-18-c text-center">{`"${testimonial.quote}"`}</p>
                                 <div className="rating">
-                                    <img className="img-fluid" src={testimonial.ratingImage} alt="rating" />
+                                    <img className="img-fluid" src={testimonial.ratingImage} alt="Rating" />
                                 </div>
                                 <h4 className="client-name">{testimonial.name}</h4>
                                 <p className="fs-18-c">{testimonial.role}</p>

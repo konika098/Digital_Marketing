@@ -1,5 +1,5 @@
 import React from "react";
-import "./ServiceDetailsBanner.css"; // Import CSS file for styling
+import "./ServiceDetailsBanner.css"; 
 
 const ServiceDetailsBanner = () => {
   return (
@@ -42,7 +42,7 @@ const ServiceDetailsBanner = () => {
           <div className="about-img">
             <img
               className="img-fluid"
-              src="./assets/images/service-details-bg.png"
+              src="/public/assets/service-details-bg.png"
               alt="Digital Marketing Service"
             />
           </div>
