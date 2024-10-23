@@ -1,5 +1,8 @@
-import React from 'react';
-import './Seo.css'; // Assuming you'll place your CSS in this file
+import seoData from '/public/Seo.json'; 
+import seo5 from '/public/assets/seo-bg.png';
+ 
+import './Seo.css'; 
+import SeoCard from './SeoCard';
 
 const Seo = () => {
     return (
@@ -9,89 +12,30 @@ const Seo = () => {
                     <div className="row align-items-center seo-res">
                         <div className="col-md-12 col-lg-6 col-xl-6">
                             <span className="fs-18 seo-sub">How we are built different</span>
-                            <h3 className="fs-52-c seo-title">Trustworthy SEO Agency for 
-                                Sustainable Online Growth
-                            </h3>
+                            <h3 className="fs-52-c seo-title">Trustworthy SEO Agency for Sustainable Online Growth</h3>
                             <p className="fs-18 about-text">
                                 Digital marketing refers to the practice of promoting products or services
                                 using digital technologies, primarily on the internet. This can include a range of techniques, such as social media marketing, 
                                 search engine optimization (SEO), email marketing, pay-per-click advertising, and content marketing.
                             </p>
                             <div className="row g-4">
-                                <div className="col-md-6 col-lg-6">
-                                    <div className="seo-card mb-4"
-                                        data-aos="fade-right"
-                                        data-aos-offset="200"
-                                        data-aos-delay="50"
-                                        data-aos-duration="1200"
-                                        data-aos-easing="ease-in-out"
-                                        data-aos-once="false"
-                                    >
-                                        <div className="icon">
-                                            <img className="img-fluid" src="./assets/images/seo-img-1.png" alt="Simple Solution" />
-                                        </div>
-                                        <div className="content">
-                                            <p className="fs-24-c">Simple Solution</p>
-                                            <p className="fs-18-s">sum dolor sit amet</p>
-                                        </div>
+                                {seoData.map((card, index) => (
+                                    <div key={index} className="col-md-6 col-lg-6">
+                                        <SeoCard 
+                                            imgSrc={card.imgSrc}
+                                            altText={card.altText}
+                                            title={card.title}
+                                            description={card.description}
+                                            aosProps={card.dataAos}
+                                        />
                                     </div>
-                                    <div className="seo-card"
-                                        data-aos="fade-right"
-                                        data-aos-offset="200"
-                                        data-aos-delay="50"
-                                        data-aos-duration="1400"
-                                        data-aos-easing="ease-in-out"
-                                        data-aos-once="false"
-                                    >
-                                        <div className="icon">
-                                            <img className="img-fluid" src="./assets/images/seo-img-2.png" alt="Management" />
-                                        </div>
-                                        <div className="content">
-                                            <p className="fs-24-c">Management</p>
-                                            <p className="fs-18-s">sum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 col-lg-6">
-                                    <div className="seo-card mb-4"
-                                        data-aos="fade-left"
-                                        data-aos-offset="200"
-                                        data-aos-delay="50"
-                                        data-aos-duration="1200"
-                                        data-aos-easing="ease-in-out"
-                                        data-aos-once="false"
-                                    >
-                                        <div className="icon">
-                                            <img className="img-fluid" src="./assets/images/seo-img-3.png" alt="Client Oriented" />
-                                        </div>
-                                        <div className="content">
-                                            <p className="fs-24-c">Client Oriented</p>
-                                            <p className="fs-18-s">sum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                    <div className="seo-card"
-                                        data-aos="fade-left"
-                                        data-aos-offset="200"
-                                        data-aos-delay="50"
-                                        data-aos-duration="1400"
-                                        data-aos-easing="ease-in-out"
-                                        data-aos-once="false"
-                                    >
-                                        <div className="icon">
-                                            <img className="img-fluid" src="./assets/images/seo-img-4.png" alt="SEO Optimization" />
-                                        </div>
-                                        <div className="content">
-                                            <p className="fs-24-c">SEO Optimization</p>
-                                            <p className="fs-18-s">sum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                         <div className="d-none d-xl-block col-xl-1"></div>
                         <div className="col-md-12 col-lg-6 col-xl-5">
                             <div className="about-img all-img-scale">
-                                <img className="img-fluid" src="./assets/images/seo-bg.png" alt="SEO Background" />
+                                <img className="img-fluid" src={seo5} alt="SEO Background" />
                             </div>
                         </div>
                     </div>
