@@ -1,5 +1,5 @@
-import React from 'react';
-import './Team.css'; // Assuming you'll place your CSS in this file
+import './Team.css'; 
+import teamMembers from '/public/Team.json'; 
 
 const Team = () => {
     return (
@@ -28,14 +28,17 @@ const Team = () => {
                 </div>
 
                 <div className="team-area team-area-one">
-                    {teamMembers.slice(0, 3).map((member, index) => (
-                        <div className="team-parent" key={index}>
+                    {teamMembers.slice(0, 3).map((member) => (
+                        <div className="team-parent" key={member.name}>
                             <div className="team-child">
                                 <div className="team-img">
-                                    <img className="img-fluid" src={member.image} alt={member.name}
+                                    <img className="img-fluid" 
+                                        src={member.image} 
+                                        alt={member.name} 
+                                        loading="lazy" 
                                         data-aos="zoom-in"
                                         data-aos-offset="200"
-                                        data-aos-delay={50 + index * 100} // staggered delay
+                                        data-aos-delay={50 + teamMembers.indexOf(member) * 100} 
                                         data-aos-duration="1000"
                                         data-aos-easing="ease-in-out"
                                         data-aos-once="false" />
@@ -48,14 +51,17 @@ const Team = () => {
                 </div>
 
                 <div className="team-area">
-                    {teamMembers.slice(3).map((member, index) => (
-                        <div className="team-parent" key={index + 3}>
+                    {teamMembers.slice(3).map((member) => (
+                        <div className="team-parent" key={member.name}>
                             <div className="team-child">
                                 <div className="team-img">
-                                    <img className="img-fluid" src={member.image} alt={member.name}
+                                    <img className="img-fluid" 
+                                        src={member.image} 
+                                        alt={member.name} 
+                                        loading="lazy" 
                                         data-aos="zoom-in"
                                         data-aos-offset="200"
-                                        data-aos-delay={50 + (index + 3) * 100} // staggered delay
+                                        data-aos-delay={50 + teamMembers.indexOf(member) * 100} 
                                         data-aos-duration="1000"
                                         data-aos-easing="ease-in-out"
                                         data-aos-once="false" />
@@ -68,21 +74,16 @@ const Team = () => {
                 </div>
 
                 <div className="purple-btn-parent">
-                    <button className="btn btn-success purple" type="button">View all team</button>
+                    <button 
+                        className="btn btn-success purple" 
+                        type="button" 
+                        onClick={() => alert('View all team functionality goes here!')}> 
+                        View all team
+                    </button>
                 </div>
             </div>
         </div>
     );
 };
-
-// Sample data for team members
-const teamMembers = [
-    { name: "Miranda Prime", role: "Co-Founder", image: "./assets/images/team-img-1.png" },
-    { name: "Tonya Sparks", role: "Co-Founder & CEO", image: "./assets/images/team-img-2.png" },
-    { name: "Jenny Gold", role: "Financial Expert", image: "./assets/images/team-img-3.png" },
-    { name: "Miranda Prime", role: "SEO Engineer", image: "./assets/images/team-img-4.png" },
-    { name: "Paul Doe", role: "SEO Engineer", image: "./assets/images/team-img-5.png" },
-    { name: "Tom Banks", role: "SEO Engineer", image: "./assets/images/team-img-6.png" },
-];
 
 export default Team;

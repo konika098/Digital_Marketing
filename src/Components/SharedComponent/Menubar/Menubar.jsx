@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, Button, Form } from 'react-bootstrap';
 import './Menubar.css'; 
-import logo from "../../../public/assets/logo.png";
+import logo from "/public/assets/logo.png";
 
 const Menubar = () => {
   const [menuItems, setMenuItems] = useState([]);

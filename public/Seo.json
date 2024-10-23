@@ -1,0 +1,58 @@
+[
+    {
+        "imgSrc": "/public/assets/seo-img-1.png",
+        "altText": "Simple Solution",
+        "title": "Simple Solution",
+        "description": "sum dolor sit amet",
+        "dataAos": {
+            "data-aos": "fade-right",
+            "data-aos-offset": "200",
+            "data-aos-delay": "50",
+            "data-aos-duration": "1200",
+            "data-aos-easing": "ease-in-out",
+            "data-aos-once": "false"
+        }
+    },
+    {
+        "imgSrc": "/public/assets/seo-img-2.png",
+        "altText": "Management",
+        "title": "Management",
+        "description": "sum dolor sit amet",
+        "dataAos": {
+            "data-aos": "fade-right",
+            "data-aos-offset": "200",
+            "data-aos-delay": "50",
+            "data-aos-duration": "1400",
+            "data-aos-easing": "ease-in-out",
+            "data-aos-once": "false"
+        }
+    },
+    {
+        "imgSrc": "/public/assets/seo-img-3.png",
+        "altText": "Client Oriented",
+        "title": "Client Oriented",
+        "description": "sum dolor sit amet",
+        "dataAos": {
+            "data-aos": "fade-left",
+            "data-aos-offset": "200",
+            "data-aos-delay": "50",
+            "data-aos-duration": "1200",
+            "data-aos-easing": "ease-in-out",
+            "data-aos-once": "false"
+        }
+    },
+    {
+        "imgSrc": "/public/assets/seo-img-4.png",
+        "altText": "SEO Optimization",
+        "title": "SEO Optimization",
+        "description": "sum dolor sit amet",
+        "dataAos": {
+            "data-aos": "fade-left",
+            "data-aos-offset": "200",
+            "data-aos-delay": "50",
+            "data-aos-duration": "1400",
+            "data-aos-easing": "ease-in-out",
+            "data-aos-once": "false"
+        }
+    }
+]

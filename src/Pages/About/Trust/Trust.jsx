@@ -1,5 +1,6 @@
-import React from 'react';
-import './Trust.css'; // Assuming you will place your CSS in this file
+import about from '../../../../public/assets/about-img-1.png';
+import about2 from '../../../../public/assets/about-img-2.png';
+import './Trust.css'; 
 
 const Trust = () => {
     return (
@@ -16,9 +17,9 @@ const Trust = () => {
                                 style={{ color: '#D0D0D0', paddingBottom: '33px' }} 
                                 className="fs-18 trust-text"
                             >
-                                Find a team of digital marketers you can rely on.
+                                {`Find a team of digital marketers you can rely on.
                                 Every day, we build trust through communication, transparency, and results. In order to make sure your website is
-                                user-friendly and optimized for Google's algorithm, our on-site optimization experts clean up the code and copy.
+                                user-friendly and optimized for Google's algorithm, our on-site optimization experts clean up the code and copy.`}
                             </p>
                             <div className="trust-btn">
                                 <a href="./contact.html">
@@ -33,7 +34,7 @@ const Trust = () => {
                             <div className="trust-img">
                                 <img 
                                     className="img-fluid" 
-                                    src="./assets/images/about-img-1.png" 
+                                    src={about} 
                                     alt="Trust Image 1"
                                     data-aos="fade-right"
                                     data-aos-offset="200"
@@ -57,7 +58,7 @@ const Trust = () => {
                             <div className="trust-img">
                                 <img 
                                     className="img-fluid" 
-                                    src="./assets/images/about-img-2.png" 
+                                    src={about2}
                                     alt="Trust Image 2"
                                     data-aos="fade-left"
                                     data-aos-offset="200"

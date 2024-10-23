@@ -6,19 +6,19 @@
         "title": "Marketing Automation",
         "description": "Our team has a successful track record of helping brands.",
         "link": "#",
-        "image": "/assets/loading.png"
+        "image": "/public/assets/loading.png"
       },
       {
         "title": "Marketing Automation",
         "description": "Our team has a successful track record of helping brands scale profitably based on high-performing strategies. E-commerce brands can acquire and retain new customers using solutions that span the entire customer journey.",
         "link": "#",
-        "image": "/assets/automation.png"
+        "image": "/public/assets/automation.png"
       },
       {
         "title": "Social Media Marketing",
         "description": "Leads are nurtured through our email, SMS, and automation services, resulting in customer acquisition and retention.",
         "link": "#",
-        "image": "/assets/smm.png"
+        "image": "/public/assets/smm.png"
       }
     ]
   }
