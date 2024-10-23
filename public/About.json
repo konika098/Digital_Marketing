@@ -1,0 +1,18 @@
+{
+    "title": "We Offer Professional SEO Services For 26+ Years",
+    "description": "Digital marketing refers to the practice of promoting products or services using digital technologies, primarily on the internet. This can include a range of techniques, such as social media marketing, search engine optimization (SEO), email marketing, pay-per-click advertising, and content marketing.",
+    "aboutSection": {
+      "heading": "About Us",
+      "points": [
+        "High End Analyzing",
+        "Updated With Trend",
+        "Technical & Creative Expertise",
+        "Marketing Management"
+      ]
+    },
+    "buttonText": "Learn More",
+    "buttonLink": "./about.html",
+    "image": "/public/assets/about-img.png",
+    "tickImage": "/public/assets/tick.png"
+  }
+  

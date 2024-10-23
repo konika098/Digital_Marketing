@@ -1,0 +1,48 @@
+{
+    "mainTitle": "Our services solve any business problem",
+    "subtitle": "Our team has a successful track record of helping brands scale profitably based on high-performing strategies.",
+    "buttonText": "See More",
+    "buttonLink": "./service.html",
+    "cards": [
+      {
+        "title": "Paid Media",
+        "text": "Increasing conversions, repeat traffic, and online authority across your website is our top priority.",
+        "image": "/public/assets/paid.png" ,
+        "link": "./service-details.html",
+        "aos": {
+          "animation": "fade-right",
+          "offset": "200",
+          "delay": "50",
+          "duration": "1200",
+          "easing": "ease-in-out"
+        }
+      },
+      {
+        "title": "Website Optimization",
+        "text": "In order for your funnel to be successful, you need to make it as smooth as possible.",
+        "image": " /public/assets/optim.png",
+        "link": "./service-details.html",
+        "aos": {
+          "animation": "fade-up",
+          "offset": "200",
+          "delay": "50",
+          "duration": "1400",
+          "easing": "ease-in-out"
+        }
+      },
+      {
+        "title": "Digital Marketing",
+        "text": "Leads are nurtured through our email, SMS, and automation services, resulting in customer acquisition and retention.",
+        "image": "/public/assets/market.png" ,
+        "link": "./service-details.html",
+        "aos": {
+          "animation": "fade-left",
+          "offset": "200",
+          "delay": "50",
+          "duration": "1200",
+          "easing": "ease-in-out"
+        }
+      }
+    ]
+  }
+  

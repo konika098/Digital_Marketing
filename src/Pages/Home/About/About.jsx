@@ -1,7 +1,22 @@
-import React from 'react';
-import './About.css'; // Ensure to create this CSS file or use a CSS module
+import { useEffect, useState } from 'react';
+import './About.css';
 
 const About = () => {
+  const [aboutContent, setAboutContent] = useState(null);
+
+ 
+  useEffect(() => {
+    fetch('/About.json')
+      .then((response) => response.json())
+      .then((data) => setAboutContent(data))
+      .catch((error) => console.error('Error fetching about content:', error));
+  }, []);
+
+ 
+  if (!aboutContent) {
+    return <div>Loading...</div>; 
+  }
+
   return (
     <div className="about-section">
       <div className="container">
@@ -9,45 +24,38 @@ const About = () => {
           <div className="row align-items-center">
             <div className="col-lg-5">
               <div className="about-img">
-                <img className="img-fluid" src="./assets/images/about-img.png" alt="About Us" />
+                <img className="img-fluid" src={aboutContent.image} alt="About Us" />
               </div>
             </div>
             <div className="col-lg-1"></div>
             <div className="col-lg-6">
               <div className="about-aside">
-                <span className="fs-18 about-sub">About Us</span>
+                <span className="fs-18 about-sub">{aboutContent.aboutSection.heading}</span>
                 <h3 className="fs-52-c" style={{ marginTop: '24px' }}>
-                  We Offer Professional SEO Services For 26+ Years
+                  {aboutContent.title}
                 </h3>
-                <p className="fs-18 about-text">
-                  Digital marketing refers to the practice of promoting products or services using digital technologies,
-                  primarily on the internet. This can include a range of techniques, such as social media marketing,
-                  search engine optimization (SEO), email marketing, pay-per-click advertising, and content marketing.
-                </p>
+                <p className="fs-18 about-text">{aboutContent.description}</p>
                 <div className="row">
                   <div className="col-lg-12 col-xl-6">
-                    <div className="child">
-                      <img className="img-fluid" src="./assets/images/tick.png" alt="Tick" />
-                      <p className="fs-18-b">High End Analyzing</p>
-                    </div>
-                    <div className="child">
-                      <img className="img-fluid" src="./assets/images/tick.png" alt="Tick" />
-                      <p className="fs-18-b">Updated With Trend</p>
-                    </div>
+                    {aboutContent.aboutSection.points.slice(0, 2).map((point, index) => (
+                      <div className="child" key={index}>
+                        <img className="img-fluid" src={aboutContent.tickImage} alt="Tick" />
+                        <p className="fs-18-b">{point}</p>
+                      </div>
+                    ))}
                   </div>
-
                   <div className="col-lg-12 col-xl-6">
-                    <div className="child">
-                      <img className="img-fluid" src="./assets/images/tick.png" alt="Tick" />
-                      <p className="fs-18-b">Technical & Creative Expertise</p>
-                    </div>
-                    <div className="child">
-                      <img className="img-fluid" src="./assets/images/tick.png" alt="Tick" />
-                      <p className="fs-18-b">Marketing Management</p>
-                    </div>
+                    {aboutContent.aboutSection.points.slice(2).map((point, index) => (
+                      <div className="child" key={index}>
+                        <img className="img-fluid" src={aboutContent.tickImage} alt="Tick" />
+                        <p className="fs-18-b">{point}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                <a href="./about.html" className="btn btn-success dark">Learn More</a>
+                <a href={aboutContent.buttonLink} className="btn btn-success dark">
+                  {aboutContent.buttonText}
+                </a>
               </div>
             </div>
           </div>

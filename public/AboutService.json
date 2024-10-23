@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Transparency",
+        "description": "Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.",
+        "imgSrcHover": "/public/assets/card-icon-1-ho.png",
+        "imgSrc": "/public/assets/card-icon-1.png",
+        "altText": "Transparency"
+    },
+    {
+        "id": 2,
+        "title": "Experienced",
+        "description": "Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.",
+        "imgSrcHover": "/public/assets/card-icon-2-ho.png",
+        "imgSrc": "/public/assets/card-icon-2.png",
+        "altText": "Experienced"
+    },
+    {
+        "id": 3,
+        "title": "Result Guarantee",
+        "description": "Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.",
+        "imgSrcHover": "/public/assets/card-icon-3-ho.png",
+        "imgSrc": "/public/assets/card-icon-3.png",
+        "altText": "Result Guarantee"
+    }
+]

@@ -1,0 +1,59 @@
+.price-card {
+    border-radius: 28px;
+    border: 1px solid var(--Line-Color-01, #EEE);
+    background: var(--Color-04, #F9F4FF);
+    padding: 32px;
+    margin-top: 32px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .price-card:hover {
+    background: var(--Primary-Color, #260058);
+    box-shadow: 0px 10px 32px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .price-card:hover .price-sub,
+  .price-card:hover .fs-16-s,
+  .price-card:hover .amount,
+  .price-card:hover .month,
+  .price-card:hover .fs-18-k {
+    color: #fff;
+  }
+  
+  .tick-default {
+    display: block;
+  }
+  
+  .tick-hover {
+    display: none;
+  }
+  
+  .price-card:hover .tick-default {
+    display: none;
+  }
+  
+  .price-card:hover .tick-hover {
+    display: block !important;
+  }
+  
+  .price-area {
+    text-align: center;
+  }
+  
+  .list-parent {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 32px;
+  }
+  
+  .price-list {
+    max-width: 206px;
+    margin: auto;
+  }
+  
+  .price-sub {
+    color: var(--Primary-Color, #260058);
+    text-align: center;
+  

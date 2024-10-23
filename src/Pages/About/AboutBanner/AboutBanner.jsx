@@ -1,5 +1,5 @@
-import React from 'react';
-import './AboutBanner.css'; // Assuming you will place your CSS in this file
+import './AboutBanner.css'; 
+import AboutBg from "../../../../public/assets/about-bg.png"
 
 const AboutBanner = () => {
     return (
@@ -34,7 +34,7 @@ const AboutBanner = () => {
                     </p>
 
                     <div className="all-img-scale">
-                        <img className="img-fluid" src="./assets/images/about-bg.png" alt="About Us Background" />
+                        <img className="img-fluid" src={AboutBg} alt="About Us Background" />
                     </div>
                 </div>
             </div>

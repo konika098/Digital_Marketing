@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Banner from './Banner/Banner';
 import Service from './Service/Service';
 import About from './About/About';
@@ -7,7 +7,7 @@ import Choose from './Choose/Choose';
 import Marketing from './Marketing/Marketing';
 import Testimonial from './Testimonial/Testimonial';
 import Blog from './Blog/Blog';
-import Email from './Email/Email';
+import Email from '../../Components/Email/Email';
 
 const Home = () => {
     return (

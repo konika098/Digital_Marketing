@@ -1,0 +1,38 @@
+.counting-section {
+    background: var(--Color-04, #f9f4ff);
+    padding: 62px 0;
+  }
+  
+  .counting-parent {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+  }
+  
+  .service-details {
+    background: #fff !important;
+  }
+  
+  .count-head {
+    color: var(--Primary-Color, #260058);
+    text-align: center;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  
+  .count-text {
+    color: var(--Secondary-Color, #5c0dc6);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  
+  .specialize-section {
+    margin: 80px 0 140px 0;
+  }
+  
+  .specialize-img {
+    max-width: 621px;
+  }
+  
