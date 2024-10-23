@@ -1,25 +1,8 @@
-import React from 'react';
-import './Blog.css'; // Assuming you will place your CSS in this file
+import './Blog.css';
+import blogsData from '/public/Blog.json'; 
+import angelIcon from "/public/assets/angel-icon.png"
 
 const Blog = () => {
-    const blogs = [
-        {
-            img: './assets/images/blog-img-1.png',
-            category: 'Marketing',
-            readTime: '2 min read',
-            title: 'How To Create A Modern That Attracts Customers?',
-            link: './blog.html',
-        },
-        {
-            img: './assets/images/blog-img-2.png',
-            category: 'Marketing',
-            readTime: '2 min read',
-            title: 'How To Create A Modern That Attracts Customers?',
-            link: './blog.html',
-        },
-        // Repeat the above objects as needed for more blogs
-    ];
-
     return (
         <div className="blog-section">
             <div className="container">
@@ -39,10 +22,10 @@ const Blog = () => {
                     </h3>
 
                     <div className="blog-slider-class">
-                        {blogs.map((blog, index) => (
+                        {blogsData.map((blog, index) => (
                             <div className="blog-wrapper" key={index}>
                                 <div className="blog-img-parent">
-                                    <img className="img-fluid" src={blog.img} alt="img" />
+                                    <img className="img-fluid" src={blog.img} alt="Blog" />
                                 </div>
                                 <div className="blog-sub-parent">
                                     <span className="fs-18-c blog-sub">{blog.category}</span>
@@ -55,7 +38,7 @@ const Blog = () => {
                                         </span>
                                     ))}</p>
                                     <a href={blog.link}>
-                                        <img className="img-fluid animatedImg" src="./assets/images/angel-icon.png" alt="icon" />
+                                        <img className="img-fluid animatedImg" src={angelIcon} alt="icon" />
                                     </a>
                                 </div>
                             </div>

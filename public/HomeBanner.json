@@ -1,0 +1,19 @@
+{
+    "title": "Improve your Business",
+    "subtitle": "with our Digital Marketing services",
+    "text": "Our goal is to make it as easy as possible for you to walk away with the solution that suits your needs perfectly. Discover how we can transform your online presence.",
+    "buttons": [
+      { "text": "Get Started", "link": "./contact.html", "variant": "success", "className": "dark" },
+      { "text": "Pricing", "link": "./service.html", "variant": "success", "className": "light", "icon": "fa-solid fa-chevron-right" }
+    ],
+    "clientInfo": "Trusted by our Clients",
+    "clientImage": "/public/assets/clients.png",
+    "bgImages": {
+      "small": "/public/assets/bg.png",
+      "large": "/public/assets/BG-1.png"
+    },
+    "partnerImage": "/public/assets/bg-img-part-1.png",
+    "partImage": "/public/assets/bg-img-part-2.png",
+    "growthImage": "/public/assets/growth-1.png"
+  }
+  
