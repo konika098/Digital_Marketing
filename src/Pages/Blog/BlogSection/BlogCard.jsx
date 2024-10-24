@@ -1,5 +1,3 @@
-
-
 const BlogCard = ({ blog }) => {
     return (
         <div className="blog-wrapper">

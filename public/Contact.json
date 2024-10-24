@@ -1,0 +1,57 @@
+{
+    "contactInfo": [
+      {
+        "icon": "fa-location-dot",
+        "label": "Calgary, Canada",
+        "link": "https://www.google.com/maps",
+        "type": "location"
+      },
+      {
+        "icon": "fa-phone",
+        "label": "+1 403 465 2617",
+        "link": "tel:+8801978159172",
+        "description": "Call directly:"
+      },
+      {
+        "icon": "fa-envelope",
+        "label": "yourmail@gmail.com",
+        "link": "mailto:naharweb15@gmail.com",
+        "description": "Send an e-mail:"
+      }
+    ],
+    "formFields": [
+      {
+        "label": "First Name*",
+        "type": "text",
+        "required": true,
+        "className": "form-control"
+      },
+      {
+        "label": "Last Name*",
+        "type": "text",
+        "required": true,
+        "className": "form-control"
+      },
+      {
+        "label": "Email Address*",
+        "type": "email",
+        "required": true,
+        "className": "form-control"
+      },
+      {
+        "label": "Subject*",
+        "type": "text",
+        "required": true,
+        "className": "form-control"
+      },
+      {
+        "label": "Comments/Questions*",
+        "type": "textarea",
+        "required": true,
+        "rows": 3,
+        "className": "form-control",
+        "placeholder": "Please type your message here..."
+      }
+    ]
+  }
+  

@@ -1,7 +1,16 @@
-import blogsData from '/public/Blog.json'; 
-import angelIcon from "/public/assets/angel-icon.png"
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import Slider from "../../Home/Blog/Slider"
 
 const Blog = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, 
+            once: true,
+        });
+    }, []);
+
     return (
         <div className="blog-section">
             <div className="container">
@@ -21,27 +30,7 @@ const Blog = () => {
                     </h3>
 
                     <div className="blog-slider-class">
-                        {blogsData.map((blog, index) => (
-                            <div className="blog-wrapper" key={index}>
-                                <div className="blog-img-parent">
-                                    <img className="img-fluid" src={blog.img} alt="Blog" />
-                                </div>
-                                <div className="blog-sub-parent">
-                                    <span className="fs-18-c blog-sub">{blog.category}</span>
-                                    <span className="fs-18-c blog-sub">{blog.readTime}</span>
-                                </div>
-                                <div className="blog-sub-2-parent">
-                                    <p className="fs-32-c text-start">{blog.title.split(' ').map((word, i) => (
-                                        <span key={i}>
-                                            {word} {i % 5 === 4 && <br className="d-none d-lg-block" />} 
-                                        </span>
-                                    ))}</p>
-                                    <a href={blog.link}>
-                                        <img className="img-fluid animatedImg" src={angelIcon} alt="icon" />
-                                    </a>
-                                </div>
-                            </div>
-                        ))}
+                        <Slider/>
                     </div>
                 </div>
             </div>

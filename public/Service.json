@@ -19,7 +19,7 @@
       },
       {
         "title": "Website Optimization",
-        "text": "In order for your funnel to be successful, you need to make it as smooth as possible.",
+        "text": "In order for your funnel to be successful, you need to make it as smooth <br> as possible.",
         "image": " /public/assets/optim.png",
         "link": "./service-details",
         "aos": {

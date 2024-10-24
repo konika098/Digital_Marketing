@@ -45,7 +45,7 @@ const Menubar = () => {
                 ))}
               </Nav>
               <Form className="d-flex">
-                <Button href={buttonLink} variant="outline-primary" className="get-started-btn">
+                <Button href={buttonLink} variant="outline-primary" className="btn btn-success">
                   {buttonText}
                 </Button>
               </Form>
