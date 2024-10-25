@@ -3,11 +3,11 @@
     {
       "title": "Company",
       "links": [
-        { "label": "Home", "href": "./index.html" },
-        { "label": "About us", "href": "./about.html" },
-        { "label": "Services", "href": "./service.html" },
-        { "label": "Blog", "href": "./blog.html" },
-        { "label": "Contact", "href": "./contact.html" }
+        { "label": "Home", "href": "/" },
+        { "label": "About us", "href": "/about" },
+        { "label": "Services", "href": "/service" },
+        { "label": "Blog", "href": "/blog" },
+        { "label": "Contact", "href": "/contact" }
       ]
     },
     {
