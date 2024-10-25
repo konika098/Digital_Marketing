@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
+  <>
     <div>
       <div className="footer__section">
         <div className="container">
@@ -46,6 +47,19 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    <div className="privacy__section">
+      <div className="container">
+        <div className="privacy__area">
+          <div className="copyright-title">
+            <p>Copyright © 2023 OneGrowth</p>
+          </div>
+          <div className="privacy-title">
+            <p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
   );
 };
 
