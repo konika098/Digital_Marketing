@@ -6,10 +6,8 @@ import Slider from "../Testimonial/Slider";
 
 const Testimonial = () => {
   useEffect(() => {
-    AOS.init({
-      once: true, // Optional: Animation occurs only once
-    });
-    AOS.refresh(); // Refresh AOS when the component mounts
+    AOS.init({ once: true }); 
+    AOS.refresh();
   }, []);
 
   return (
@@ -17,26 +15,20 @@ const Testimonial = () => {
       <div className="container">
         <div className="testimonial-area">
           <div className="test-sub">
-            <span className="fs-18 about-sub">Testimonial</span>
+            <span className="about-sub fs-18">Testimonial</span>
+            <h3
+              className="test-sub fs-52-c"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              What Our Clients Are <br className="d-none d-md-block" />
+              Saying About Us
+            </h3>
           </div>
-          <h3
-            className="fs-52-c text-center"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-once="false"
-            style={{ margin: "30px 0" }}
-          >
-            What Our Clients Are
-            <br className="d-none d-md-block" />
-            Saying About Us
-          </h3>
-
-          <div className="testimonial-slider-class">
-            <Slider />
-          </div>
+          <Slider />
         </div>
       </div>
     </div>

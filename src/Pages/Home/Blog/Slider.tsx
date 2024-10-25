@@ -1,26 +1,25 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
 import "../../Home/Blog/Slider.css";
-
-
 import { Pagination } from "swiper/modules";
-import blogsData from "/public/Blog.json";
+import { blogData } from "../../../utils/data";
 import angelIcon from "/public/assets/angel-icon.png";
 import { Link } from "react-router-dom";
 
 export default function App() {
   return (
     <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-        <SwiperSlide>
-          {blogsData.map((blog, index) => (
-            <div className="blog-wrapper" key={index}>
+      <Swiper
+        slidesPerView={2}
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        {blogData.map((blog, index) => (
+          <SwiperSlide key={index}>
+            <div className="blog-wrapper">
               <div className="blog-img-parent">
                 <img className="img-fluid" src={blog.img} alt="Blog" />
               </div>
@@ -46,8 +45,8 @@ export default function App() {
                 </Link>
               </div>
             </div>
-          ))}
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
