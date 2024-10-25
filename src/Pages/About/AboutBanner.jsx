@@ -6,9 +6,9 @@ import AboutBg from "/public/assets/about-bg.png";
 const AboutBanner = () => {
   useEffect(() => {
     AOS.init({
-      once: true, // Ensures animations only happen once on scroll
+      once: true, 
     });
-    AOS.refresh(); // Refresh AOS to ensure it works with dynamic content
+    AOS.refresh();
   }, []);
 
   return (

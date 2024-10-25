@@ -23,8 +23,7 @@ const Seo = () => {
                                             imgSrc={card.imgSrc}
                                             altText={card.altText}
                                             title={card.title}
-                                            description={card.description}
-                                         
+                                            description={card.description}                                        
                                         />
                                     </div>
                                 ))}

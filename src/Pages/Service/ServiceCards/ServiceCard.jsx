@@ -17,7 +17,7 @@ const ServiceCard = ({ image, title, text, animation }) => {
           <div className="new-card-img-top">
             <img className="img-fluid" src={image} alt={title} />
           </div>
-          <h5 className="card-title">{title}</h5>
+          <h5 className="text-white" style={{marginTop:"20px"}}>{title}</h5>
           <p className="card-text">{text}</p>
           <i className="fa-solid fa-arrow-right-long"></i>
         </div>

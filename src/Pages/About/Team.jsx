@@ -1,14 +1,13 @@
 import { useEffect } from "react";
-import AOS from "aos"; // Import AOS
-import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos"; 
+import "aos/dist/aos.css";
 import teamMembers from "/public/Team.json";
 
 const Team = () => {
-  // Initialize AOS when the component mounts
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration
-      once: false, // Animation should happen only once
+      duration: 1000, 
+      once: false,
     });
   }, []);
 

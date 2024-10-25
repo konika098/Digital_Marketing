@@ -34,7 +34,7 @@ const Digital = () => {
           {cards.map((card) => (
             <div className="col-md-6 col-lg-4" key={card.id}>
               <div className="new_card service-detl-res">
-                <div className="new-card-img-top">
+                <div>
                   <img className="img-fluid" src={card.image} alt={card.title} />
                 </div>
                 <h5 className="card-title">{card.title}</h5>

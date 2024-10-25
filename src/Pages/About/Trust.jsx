@@ -1,14 +1,14 @@
 import { useEffect } from "react";
-import AOS from "aos"; // Import AOS
-import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 import about from "/public/assets/about-img-1.png";
 import about2 from "/public/assets/about-img-2.png";
 
 const Trust = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of animations
-      once: false, // Animation should happen only once
+      duration: 1000, 
+      once: false,
     });
   }, []);
 

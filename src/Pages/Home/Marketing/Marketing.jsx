@@ -81,7 +81,7 @@ const Marketing = () => {
                       <div style={{ display: "flex", flexDirection: "column" }}>
                         <h5 className="fs-32-w">{section.title}</h5>
                         <p
-                          className="fs-18-w"
+                          className="text-[#260058]"
                           style={{ padding: "12px 0 18px" }}
                         >
                           {section.description}
@@ -96,8 +96,8 @@ const Marketing = () => {
                       </div>
                       <div style={{ width: "618px" }}>
                         <img
-                          className="img-fluid"
-                          style={{ width: "100px" }}
+                          className="img-fluid w-100"
+                          style={{ width: "100px", marginTop:"20px" }}
                           src={section.image}
                           alt="img"
                         />
@@ -106,7 +106,7 @@ const Marketing = () => {
                   ) : (
                     <>
                       <h5 className="fs-32-w">{section.title}</h5>
-                      <p className="fs-18-w" style={{ padding: "12px 0 18px" }}>
+                      <p className="text-[#260058]" style={{ padding: "12px 0 18px" }}>
                         {section.description}
                       </p>
                       <a href={section.link} className="simple">
