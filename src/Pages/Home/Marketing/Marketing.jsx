@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 
 const Marketing = () => {
   const [marketingData, setMarketingData] = useState(null);
@@ -77,27 +77,65 @@ const Marketing = () => {
               >
                 <div className={`section-${index + 1}`}>
                   {index === marketingData.sections.length - 1 ? (
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                      <div style={{ display: "flex", flexDirection: "column" }}>
-                        <h5 className="fs-32-w">{section.title}</h5>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        padding: "40px",
+                        backgroundColor: "#F4EFFF", // Soft purple background
+                        borderRadius: "20px", // Rounded corners
+                        boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.1)", // Subtle shadow
+                        alignItems: "center",
+                      }}
+                    >
+                      <div style={{ flex: "1", paddingRight: "20px" }}>
+                        <h5
+                          className="fs-32-w"
+                          style={{
+                            fontSize: "28px",
+                            fontWeight: "bold",
+                            marginBottom: "20px",
+                          }}
+                        >
+                          {section.title}
+                        </h5>
                         <p
                           className="fs-18-w"
-                          style={{ padding: "12px 0 18px" }}
+                          style={{
+                            fontSize: "18px",
+                            lineHeight: "1.6",
+                            color: "#4A4A4A",
+                            marginBottom: "20px",
+                          }}
                         >
                           {section.description}
                         </p>
                         <a
                           href={section.link}
                           className="simple"
-                          style={{ marginRight: "10px" }}
+                          style={{
+                            fontSize: "16px",
+                            color: "#6A0DAD", // Link color matching the theme
+                            fontWeight: "bold",
+                            display: "inline-flex",
+                            alignItems: "center",
+                          }}
                         >
-                          Learn More <FaLongArrowAltRight />
+                          Learn More{" "}
+                          <FaLongArrowAltRight
+                            style={{ marginLeft: "8px", fontSize: "18px" }}
+                          />
                         </a>
                       </div>
-                      <div style={{ width: "618px" }}>
+                      <div style={{ flex: "0 0 300px", textAlign: "right" }}>
                         <img
                           className="img-fluid"
-                          style={{ width: "100px" }}
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            objectFit: "cover",
+                            borderRadius: "10px", // Slightly rounded corners
+                          }}
                           src={section.image}
                           alt="img"
                         />
@@ -106,7 +144,10 @@ const Marketing = () => {
                   ) : (
                     <>
                       <h5 className="fs-32-w">{section.title}</h5>
-                      <p className="fs-18-w" style={{ padding: "12px 0 18px" }}>
+                      <p
+                        className="fs-18-w"
+                        style={{ padding: "12px 0 18px" }}
+                      >
                         {section.description}
                       </p>
                       <a href={section.link} className="simple">
