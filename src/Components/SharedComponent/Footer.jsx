@@ -51,7 +51,7 @@ const Footer = () => {
       <div className="container">
         <div className="privacy__area">
           <div className="copyright-title">
-            <p>Copyright © 2023 OneGrowth</p>
+            <p>Copyright © {new Date().getFullYear()} OneGrowth</p>
           </div>
           <div className="privacy-title">
             <p>All Rights Reserved | Terms and Conditions | Privacy Policy</p>
