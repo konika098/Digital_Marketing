@@ -16,8 +16,9 @@ import angelIcon from "/public/assets/angel-icon.png"
 export default function App() {
   return (
     <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-        <SwiperSlide>{blogsData.map((blog, index) => (
+      <Swiper  slidesPerView={2} className="mySwiper">
+        {blogsData.map((blog, index) => (
+            <SwiperSlide>
                             <div className="blog-wrapper" key={index}>
                                 <div className="blog-img-parent">
                                     <img className="img-fluid" src={blog.img} alt="Blog" />
@@ -37,7 +38,8 @@ export default function App() {
                                     </a>
                                 </div>
                             </div>
-                        ))}</SwiperSlide>
+                            </SwiperSlide>
+                        ))}
     
       </Swiper>
     </>
