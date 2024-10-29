@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'; 
-import tick from "/public/assets/tick.png";
-import ChooseImg from "/public/assets/choose-img.png";
 
 const Choose = () => {
   const [chooseData, setChooseData] = useState(null);
