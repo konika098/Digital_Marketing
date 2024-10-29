@@ -46,7 +46,7 @@ const About = () => {
                   <div className="col-lg-12 col-xl-6">
                     {aboutContent.aboutSection.points.slice(2).map((point, index) => (
                       <div className="child" key={index}>
-                        <img className="img-fluid" src={aboutContent.tickImage} alt="Tick" />
+                        <img className="img-fluid" src="https://i.ibb.co.com/xGP3FL0/tick.png" alt="Tick" />
                         <p className="fs-18-b">{point}</p>
                       </div>
                     ))}
