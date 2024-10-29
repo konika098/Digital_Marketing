@@ -5,7 +5,6 @@ import "swiper/css/pagination";
 import "../../Home/Blog/Slider.css";
 import { Pagination } from "swiper/modules";
 import { blogData } from "../../../utils/data";
-import angelIcon from "/public/assets/angel-icon.png";
 import { Link } from "react-router-dom";
 
 export default function App() {
@@ -39,7 +38,7 @@ export default function App() {
                 <Link to={blog.link}>
                   <img
                     className="img-fluid animatedImg"
-                    src={angelIcon}
+                    src="https://i.postimg.cc/wxV5b40D/angel-icon.png"
                     alt="icon"
                   />
                 </Link>

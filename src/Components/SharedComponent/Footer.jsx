@@ -1,4 +1,3 @@
-import footerLogo from "/public/assets/footer-logo.png";
 import { footerData } from "../../utils/data"; 
 import { Link } from "react-router-dom";
 
@@ -11,7 +10,7 @@ const Footer = () => {
           <div className="footer__area">
             <div className="footer-parent">
               <div className="footer_logo">
-                <Link to='/'><img className="img-fluid" src={footerLogo} alt="Footer Logo" /></Link>
+                <Link to='/'><img className="img-fluid" src="https://i.postimg.cc/HWB5tck2/footer-logo.png" alt="Footer Logo" /></Link>
                 <p className="fs-18-w footer-logo-text">
                   Lorem ipsum dolor sit amet
                   <br className="d-none d-lg-block" />

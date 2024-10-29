@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AboutBg from "/public/assets/about-bg.png";
 
 const AboutBanner = () => {
   useEffect(() => {
@@ -46,7 +45,7 @@ const AboutBanner = () => {
           <div className="all-img-scale">
             <img
               className="img-fluid"
-              src={AboutBg}
+              src="https://i.postimg.cc/vHC4PWFW/about-bg.png"
               alt="About Us Background"
             />
           </div>

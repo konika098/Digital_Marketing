@@ -3,24 +3,24 @@
         "id": 1,
         "title": "Transparency",
         "description": "Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.",
-        "imgSrcHover": "/public/assets/card-icon-1-ho.png",
-        "imgSrc": "/public/assets/card-icon-1.png",
+        "imgSrcHover": "https://i.postimg.cc/wTnC4kqc/card-icon-1-ho.png",
+        "imgSrc": "https://i.postimg.cc/2ySYmjMQ/card-icon-1.png",
         "altText": "Transparency"
     },
     {
         "id": 2,
         "title": "Experienced",
         "description": "Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.",
-        "imgSrcHover": "/public/assets/card-icon-2-ho.png",
-        "imgSrc": "/public/assets/card-icon-2.png",
+        "imgSrcHover": "https://i.postimg.cc/8C4nGdSY/card-icon-2-ho.png",
+        "imgSrc": "https://i.postimg.cc/vmbSCqp9/card-icon-2.png",
         "altText": "Experienced"
     },
     {
         "id": 3,
         "title": "Result Guarantee",
         "description": "Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.",
-        "imgSrcHover": "/public/assets/card-icon-3-ho.png",
-        "imgSrc": "/public/assets/card-icon-3.png",
+        "imgSrcHover": "https://i.postimg.cc/hj3yzShb/card-icon-3-ho.png",
+        "imgSrc": "https://i.postimg.cc/KzYp8Kc8/card-icon-3.png",
         "altText": "Result Guarantee"
     }
 ]

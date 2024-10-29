@@ -38,7 +38,7 @@ const Choose = () => {
 
               {chooseData.points.map((point, index) => (
                 <div className="child" style={{ paddingBottom: index === chooseData.points.length - 1 ? '32px' : '24px' }} key={index}>
-                  <img className="img-fluid" src={tick} alt="img" />
+                  <img className="img-fluid" src="https://i.postimg.cc/c4kqRm3c/tick.png" alt="img" />
                   <p className="fs-18-c res-375">{point}</p>
                 </div>
               ))}
@@ -50,7 +50,7 @@ const Choose = () => {
 
             <div className="col-lg-5">
               <div className="choose-img">
-                <img className="img-fluid" src={ChooseImg} alt="img" />
+                <img className="img-fluid" src="https://i.postimg.cc/BbNrw5V4/choose-img.png" alt="img" />
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 [
     {
-        "imgSrc": "/public/assets/seo-img-1.png",
+        "imgSrc": "https://i.postimg.cc/gjJKKv9C/seo-img-1.png",
         "altText": "Simple Solution",
         "title": "Simple Solution",
         "description": "sum dolor sit amet",
@@ -14,7 +14,7 @@
         }
     },
     {
-        "imgSrc": "/public/assets/seo-img-2.png",
+        "imgSrc": "https://i.postimg.cc/Pqjz7Gsz/seo-img-2.png",
         "altText": "Management",
         "title": "Management",
         "description": "sum dolor sit amet",
@@ -28,7 +28,7 @@
         }
     },
     {
-        "imgSrc": "/public/assets/seo-img-3.png",
+        "imgSrc": "https://i.postimg.cc/vZRW1RBF/seo-img-3.png",
         "altText": "Client Oriented",
         "title": "Client Oriented",
         "description": "sum dolor sit amet",
@@ -42,7 +42,7 @@
         }
     },
     {
-        "imgSrc": "/public/assets/seo-img-4.png",
+        "imgSrc": "https://i.postimg.cc/kXSSPjyj/seo-img-4.png",
         "altText": "SEO Optimization",
         "title": "SEO Optimization",
         "description": "sum dolor sit amet",

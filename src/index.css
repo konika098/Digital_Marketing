@@ -185,6 +185,7 @@ img.animatedImg {
   max-width: 60px;
   max-height: 60px;
   margin: auto;
+  border: none;
 }
 
 .new_card i {

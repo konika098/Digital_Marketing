@@ -1,32 +1,32 @@
 // Blog data
 export const blogData = [
     {
-      img: "/public/assets/blog-img-1.png",
+      img: "https://i.postimg.cc/N0Cq4kZt/blog-img-1.png",
       category: "Marketing",
       readTime: "2 min read",
       title: "How To Create A Modern That Attracts Customers?",
-      link: "./blog.html",
+      link: "/blog",
     },
     {
-      img: "/public/assets/blog-img-2.png",
+      img: "https://i.postimg.cc/3NHLCyr7/blog-img-2.png",
       category: "Marketing",
       readTime: "2 min read",
       title: "How To Create A Modern That Attracts Customers?",
-      link: "./blog.html",
+      link: "/blog",
     },
     {
-      img: "/public/assets/blog-img-1.png",
+      img: "https://i.postimg.cc/N0Cq4kZt/blog-img-1.png",
       category: "Marketing",
       readTime: "2 min read",
       title: "How To Create A Modern That Attracts Customers?",
-      link: "./blog.html",
+      link: "/blog",
     },
     {
-      img: "/public/assets/blog-img-2.png",
+      img: "https://i.postimg.cc/3NHLCyr7/blog-img-2.png",
       category: "Marketing",
       readTime: "2 min read",
       title: "How To Create A Modern That Attracts Customers?",
-      link: "./blog.html",
+      link: "/blog",
     },
   ];
   

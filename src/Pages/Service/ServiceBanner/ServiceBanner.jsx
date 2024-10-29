@@ -1,5 +1,3 @@
-import serviceBanner from "/public/assets/service-bg.png"
-
 const ServiceBanner = () => {
     return (
         <div className="service-integrate-section">
@@ -18,7 +16,7 @@ const ServiceBanner = () => {
                         <div className="col-lg-1 col-xl-1"></div>
                         <div className="col-lg-6 col-xl-7">
                             <div className="integrate-img">
-                                <img className="img-fluid" src={serviceBanner} alt="Integrated Digital Marketing" />
+                                <img className="img-fluid" src="https://i.postimg.cc/vBqY46Wq/service-bg.png" alt="Integrated Digital Marketing" />
                             </div>
                         </div>
                     </div>

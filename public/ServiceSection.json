@@ -1,21 +1,21 @@
 [
     {
         "id": 1,
-        "image": "/public/assets/paid.png",
+        "image": "https://i.ibb.co.com/Pr963YH/paid.jpg",
         "title": "Paid Media",
         "text": "Increasing conversions, repeat traffic, and online authority across your website is our top priority.",
         "animation": "fade-right"
     },
     {
         "id": 2,
-        "image": "/public/assets/optim.png",
+        "image": "https://i.ibb.co.com/PcFncCq/optim.jpg",
         "title": "Website Optimization",
         "text": "In order for your funnel to be successful, you need to make it as smooth as possible.",
         "animation": "fade-up"
     },
     {
         "id": 3,
-        "image": "/public/assets/market.png",
+        "image": "https://i.ibb.co.com/1s5x8Hb/market.jpg",
         "title": "Digital Marketing",
         "text": "Leads are nurtured through our email, SMS, and automation services, resulting in customer acquisition and retention.",
         "animation": "fade-left"

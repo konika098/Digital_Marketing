@@ -1,8 +1,8 @@
 [
-    { "name": "Miranda Prime", "role": "Co-Founder", "image": "/public/assets/team-img-1.png" },
-    { "name": "Tonya Sparks", "role": "Co-Founder & CEO", "image": "/public/assets/team-img-2.png" },
-    { "name": "Jenny Gold", "role": "Financial Expert", "image": "/public/assets/team-img-3.png" },
-    { "name": "Miranda Prime", "role": "SEO Engineer", "image": "/public/assets/team-img-4.png" },
-    { "name": "Paul Doe", "role": "SEO Engineer", "image": "/public/assets/team-img-5.png" },
-    { "name": "Tom Banks", "role": "SEO Engineer", "image": "/public/assets/team-img-6.png" }
+    { "name": "Miranda Prime", "role": "Co-Founder", "image": "https://i.postimg.cc/ZntfFwFC/team-img-1.png" },
+    { "name": "Tonya Sparks", "role": "Co-Founder & CEO", "image": "https://i.postimg.cc/MGntCC9n/team-img-2.png" },
+    { "name": "Jenny Gold", "role": "Financial Expert", "image": "https://i.postimg.cc/hjxsj9Wg/team-img-3.png" },
+    { "name": "Miranda Prime", "role": "SEO Engineer", "image": "https://i.postimg.cc/zfhKS8dF/team-img-4.png" },
+    { "name": "Paul Doe", "role": "SEO Engineer", "image": "https://i.postimg.cc/5NtzKw70/team-img-5.png" },
+    { "name": "Tom Banks", "role": "SEO Engineer", "image": "https://i.postimg.cc/dtSybLp9/team-img-6.png" }
 ]

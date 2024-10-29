@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, Button, Form } from 'react-bootstrap';
-import logo from "/public/assets/logo.png";
 
 const Menubar = () => {
   const [menuItems, setMenuItems] = useState([]);
@@ -25,7 +24,7 @@ const Menubar = () => {
         <Navbar expand="lg" bg="light">
           <Container fluid>
             <Navbar.Brand href="/">
-              <img className="img-fluid" src={logo} alt="logo" />
+              <img className="img-fluid" src="https://i.postimg.cc/qBPtwsd2/logo.png" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarSupportedContent">
               <span className="navbar-toggler-icon">

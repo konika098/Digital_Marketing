@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
-import about from "/public/assets/about-img-1.png";
-import about2 from "/public/assets/about-img-2.png";
 
 const Trust = () => {
   useEffect(() => {
@@ -33,7 +31,7 @@ const Trust = () => {
                 user-friendly and optimized for Google's algorithm, our on-site optimization experts clean up the code and copy.`}
               </p>
               <div className="trust-btn">
-                <a href="./contact.html">
+                <a href="/contact">
                   <button className="btn btn-success purple" type="button">
                     Contact Us
                   </button>
@@ -47,7 +45,7 @@ const Trust = () => {
               <div className="trust-img">
                 <img
                   className="img-fluid"
-                  src={about}
+                  src="https://i.postimg.cc/KvQ2jbQ4/about-img-1.png"
                   alt="Trust Image 1"
                   data-aos="fade-right"
                   data-aos-offset="200"
@@ -71,7 +69,7 @@ const Trust = () => {
               <div className="trust-img">
                 <img
                   className="img-fluid"
-                  src={about2}
+                  src="https://i.postimg.cc/65Mkw05v/about-img-2.png"
                   alt="Trust Image 2"
                   data-aos="fade-left"
                   data-aos-offset="200"
