@@ -1,19 +1,18 @@
 import { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, Button, Form } from 'react-bootstrap';
+import { useLocation } from 'react-router-dom'; // Import useLocation
 
 const Menubar = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [buttonText, setButtonText] = useState('');
-  // const [buttonLink, setButtonLink] = useState('');
+  const location = useLocation(); // Get the current location
 
-  
   useEffect(() => {
     fetch('/MenuItems.json')
       .then((response) => response.json())
       .then((data) => {
         setMenuItems(data.menuItems);
         setButtonText(data.buttonText);
-        // setButtonLink(data.buttonLink);
       })
       .catch((error) => console.error('Error fetching menu items:', error));
   }, []);
@@ -37,7 +36,7 @@ const Menubar = () => {
                   <Nav.Link
                     key={index}
                     href={item.href}
-                    className={item.isActive ? 'active' : ''}
+                    className={location.pathname === item.href ? 'active' : ''} // Add active class based on location
                   >
                     {item.label}
                   </Nav.Link>
