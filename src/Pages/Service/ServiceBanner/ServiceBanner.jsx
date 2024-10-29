@@ -11,7 +11,7 @@ const ServiceBanner = () => {
                                 Your digital marketing should be integrated and joined up. In order to get more results
                                 for you, we make sure all your digital marketing channels are integrated together.
                             </p>
-                            <a href="./contact.html" className="btn btn-success dark dark-2">Contact Us</a>
+                            <a href="/contact" className="btn btn-success dark dark-2">Contact Us</a>
                         </div>
                         <div className="col-lg-1 col-xl-1"></div>
                         <div className="col-lg-6 col-xl-7">
