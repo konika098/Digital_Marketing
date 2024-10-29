@@ -11,8 +11,8 @@
       ]
     },
     "buttonText": "Learn More",
-    "buttonLink": "./about.html",
-    "image": "/public/assets/about-img.png",
-    "tickImage": "/public/assets/tick.png"
+    "buttonLink": "/about",
+    "image": "https://i.postimg.cc/HWQs9fW9/about-img.png",
+    "tickImage": "https://i.ibb.co.com/xGP3FL0/tick.png"
   }
   

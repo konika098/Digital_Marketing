@@ -4,7 +4,7 @@ import { Navbar, Nav, Container, Button, Form } from 'react-bootstrap';
 const Menubar = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [buttonText, setButtonText] = useState('');
-  const [buttonLink, setButtonLink] = useState('');
+  // const [buttonLink, setButtonLink] = useState('');
 
   
   useEffect(() => {
@@ -13,7 +13,7 @@ const Menubar = () => {
       .then((data) => {
         setMenuItems(data.menuItems);
         setButtonText(data.buttonText);
-        setButtonLink(data.buttonLink);
+        // setButtonLink(data.buttonLink);
       })
       .catch((error) => console.error('Error fetching menu items:', error));
   }, []);
