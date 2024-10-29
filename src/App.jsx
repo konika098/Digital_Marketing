@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import './App.css'
 import {
   createBrowserRouter,
@@ -16,31 +14,31 @@ import Contact from './Pages/Contact/Contact';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main/>,
-    children:[
+    element: <Main />,
+    children: [
       {
-        path:"/",
-        element:<Home/>
+        path: "/",
+        element: <Home />
       },
       {
-        path:"/about",
-        element:<About/>
+        path: "/about",
+        element: <About />
       },
       {
-        path:"/blog",
-        element:<Blog/>
+        path: "/blog",
+        element: <Blog />
       },
       {
-        path:"/service",
-        element:<Service/>
+        path: "/service",
+        element: <Service />
       },
       {
-        path:"/service-details",
-        element:<ServiceDetails/>
+        path: "/service-details",
+        element: <ServiceDetails />
       },
       {
-        path:"/contact",
-        element:<Contact/>
+        path: "/contact",
+        element: <Contact />
       }
     ]
   },
@@ -50,10 +48,8 @@ function App() {
 
   return (
     <>
-    <RouterProvider router={router} />
-</>
-
-      
+      <RouterProvider router={router} />
+    </>
   )
 }
 

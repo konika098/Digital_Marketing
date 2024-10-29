@@ -1,23 +1,31 @@
-import { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, Button, Form } from 'react-bootstrap';
 
 const Menubar = () => {
-  const [menuItems, setMenuItems] = useState([]);
-  const [buttonText, setButtonText] = useState('');
-  const [buttonLink, setButtonLink] = useState('');
+  // const [menuItems, setMenuItems] = useState([]);
+  // const [buttonText, setButtonText] = useState('');
+  // const [buttonLink, setButtonLink] = useState('');
 
-  
-  useEffect(() => {
-    fetch('/MenuItems.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setMenuItems(data.menuItems);
-        setButtonText(data.buttonText);
-        setButtonLink(data.buttonLink);
-      })
-      .catch((error) => console.error('Error fetching menu items:', error));
-  }, []);
+  // useEffect(() => {
+  //   fetch('/MenuItems.json')
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setMenuItems(data.menuItems);
+  //       setButtonText(data.buttonText);
+  //       setButtonLink(data.buttonLink);
+  //     })
+  //     .catch((error) => console.error('Error fetching menu items:', error));
+  // }, []);
 
+  const menuItems = [
+    { "label": "Home", "href": "/", "isActive": true },
+    { "label": "About us", "href": "/about", "isActive": false },
+    { "label": "Our Services", "href": "/service", "isActive": false },
+    { "label": "Blog", "href": "/blog", "isActive": false },
+    { "label": "Contact", "href": "/contact", "isActive": false }
+  ]
+
+  const buttonText = "Get Started";
+  const buttonLink = "/contact";
   return (
     <div className="menubar__section">
       <Container>

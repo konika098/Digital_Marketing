@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'; 
+import { useEffect, useState } from 'react';
 
 const Choose = () => {
   const [chooseData, setChooseData] = useState(null);
@@ -11,9 +11,9 @@ const Choose = () => {
   }, []);
 
 
-  if (!chooseData) {
-    return <div>Loading...</div>; 
-  }
+  // if (!chooseData) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <div className="choose-section">
@@ -23,7 +23,7 @@ const Choose = () => {
             <div className="col-lg-6">
               <span className="fs-18 about-sub">Why Choose Us</span>
               <h3 className="fs-52-c" style={{ marginTop: '24px' }}>
-                {chooseData.heading.split('\n').map((line, index) => (
+                {chooseData?.heading.split('\n').map((line, index) => (
                   <span key={index}>
                     {line}
                     <br className={index === 0 ? "d-none d-xl-block" : ""} />
@@ -31,11 +31,11 @@ const Choose = () => {
                 ))}
               </h3>
               <p className="fs-18 about-text">
-                {chooseData.description}
+                {chooseData?.description}
               </p>
 
-              {chooseData.points.map((point, index) => (
-                <div className="child" style={{ paddingBottom: index === chooseData.points.length - 1 ? '32px' : '24px' }} key={index}>
+              {chooseData?.points.map((point, index) => (
+                <div className="child" style={{ paddingBottom: index === chooseData?.points.length - 1 ? '32px' : '24px' }} key={index}>
                   <img className="img-fluid" src="https://i.postimg.cc/c4kqRm3c/tick.png" alt="img" />
                   <p className="fs-18-c res-375">{point}</p>
                 </div>
