@@ -27,7 +27,7 @@ const ServiceDetailsBanner = () => {
           <div className="about-img">
             <img
               className="img-fluid"
-              src="/public/assets/service-details-bg.png"
+              src="https://i.postimg.cc/MHfnxYhb/service-details-bg.png"
               alt="Digital Marketing Service"
             />
           </div>

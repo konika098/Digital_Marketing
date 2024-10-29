@@ -40,12 +40,12 @@ const Pricing = () => {
                       <div className="list-parent" key={index}>
                         <img
                           className="img-fluid tick-default"
-                          src="/public/assets/price-tick.png"
+                          src="https://i.postimg.cc/3wQCqk0c/price-tick.png"
                           alt="icon"
                         />
                         <img
                           className="img-fluid tick-hover"
-                          src="/public/assets/price-tick-hover.png"
+                          src="https://i.postimg.cc/bJz0z4T0/price-tick-hover.png"
                           alt="icon"
                         />
                         <p className="fs-18-k">{feature}</p>

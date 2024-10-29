@@ -47,7 +47,7 @@ const Choose = () => {
 
             <div className="col-lg-5">
               <div className="choose-img">
-                <img className="img-fluid" src="/public/assets/agency-bg.png" alt="Agency Background" />
+                <img className="img-fluid" src="https://i.postimg.cc/XYd99n1c/agency-bg.png" alt="Agency Background" />
               </div>
             </div>
           </div>

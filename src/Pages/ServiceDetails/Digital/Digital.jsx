@@ -37,7 +37,7 @@ const Digital = () => {
                 <div>
                   <img className="img-fluid" src={card.image} alt={card.title} />
                 </div>
-                <h5 className="card-title">{card.title}</h5>
+                <h5 className="card-title text-white">{card.title}</h5>
                 <div className="card-parent">
                   <div className="card-child">
                     <p className="card-text">

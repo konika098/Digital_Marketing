@@ -6,7 +6,7 @@ const Specialize = () => {
           <div className="row align-items-center">
             <div className="col-lg-5">
               <div className="specialize-img all-img-scale">
-                <img className="img-fluid" src="/public/assets/service-details-img.png" alt="img" />
+                <img className="img-fluid" src="https://i.postimg.cc/FHVg29bF/service-details-img.png" alt="img" />
               </div>
             </div>
             <div className="col-lg-7 ps-lg-5">
