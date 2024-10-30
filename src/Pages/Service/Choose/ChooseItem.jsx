@@ -4,7 +4,7 @@
 const ChooseItem = ({ text }) => {
   return (
     <div className="choose-child">
-      <img className="img-fluid" src="/public/assets/tick.png" alt="Tick Icon" />
+      <img className="img-fluid" src="https://i.postimg.cc/N0W5JJGc/tick.png" alt="Tick Icon" />
       <p className="fs-22-c res-375">{text}</p>
     </div>
   );
