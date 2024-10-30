@@ -1223,20 +1223,19 @@ body {
   --bs-bg-opacity: 0;
 }
 
-/* .fa-bars:before, .fa-navicon:before {
-  content: none;
-} */
 .navbar {
   --bs-navbar-nav-link-padding-x: 56px;
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 22px;
 }
 
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link.active,
+.nav-link.active {
   color: #ae72ff;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-expand-lg .nav-link {
   padding-right: 56px;
   padding-left: 0px;
 }
@@ -1246,15 +1245,11 @@ body {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  line-height: 150%;
-  /* 27px */
+  line-height: 150%; 
+  text-decoration: none; 
 }
 
 .nav-link:focus,
-.nav-link:hover {
-  color: #fff;
-}
-
 .nav-link:hover {
   color: #ae72ff;
 }
@@ -1277,6 +1272,12 @@ button.navbar-toggler {
 .navbar-toggler-icon i {
   font-size: 28px !important;
 }
+
+button.navbar-toggler {
+  outline: none;
+  box-shadow: unset !important;
+}
+
 
 /* =========menubar end============== */
 

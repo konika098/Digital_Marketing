@@ -1,21 +1,24 @@
-import { Navbar, Nav, Container, Button, Form } from 'react-bootstrap';
+import { Navbar, Container, Form } from 'react-bootstrap';
+import { Link, useLocation } from 'react-router-dom';
 
 const Menubar = () => {
   const menuItems = [
-    { "label": "Home", "href": "/", "isActive": true },
-    { "label": "About us", "href": "/about", "isActive": false },
-    { "label": "Our Services", "href": "/service", "isActive": false },
-    { "label": "Blog", "href": "/blog", "isActive": false },
-    { "label": "Contact", "href": "/contact", "isActive": false }
-  ]
+    { label: "Home", href: "/" },
+    { label: "About us", href: "/about" },
+    { label: "Our Services", href: "/service" },
+    { label: "Blog", href: "/blog" },
+    { label: "Contact", href: "/contact" },
+  ];
 
   const buttonText = "Get Started";
+  const location = useLocation();
+
   return (
     <div className="menubar__section">
       <Container>
         <Navbar expand="lg" bg="light">
           <Container fluid>
-            <Navbar.Brand href="/">
+            <Navbar.Brand as={Link} to="/">
               <img className="img-fluid" src="https://i.postimg.cc/qBPtwsd2/logo.png" alt="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarSupportedContent">
@@ -24,21 +27,21 @@ const Menubar = () => {
               </span>
             </Navbar.Toggle>
             <Navbar.Collapse id="navbarSupportedContent">
-              <Nav className="mx-auto">
+              <div className="mx-auto d-flex">
                 {menuItems.map((item, index) => (
-                  <Nav.Link
+                  <Link
                     key={index}
-                    href={item.href}
-                    className={location.pathname === item.href ? 'active' : ''} 
+                    to={item.href}
+                    className={`nav-link ${location.pathname === item.href ? 'active' : ''}`}
                   >
                     {item.label}
-                  </Nav.Link>
+                  </Link>
                 ))}
-              </Nav>
+              </div>
               <Form className="d-flex">
-                <Button href="/service" variant="outline-primary" className="btn btn-success">
+                <Link to="/service" className="btn btn-success">
                   {buttonText}
-                </Button>
+                </Link>
               </Form>
             </Navbar.Collapse>
           </Container>
