@@ -42,7 +42,7 @@ const Choose = () => {
                 </div>
               ))}
 
-              <Link href="/contact" className="btn btn-success dark">Contact Us</Link>
+              <Link to="/contact" className="btn btn-success dark">Contact Us</Link>
             </div>
 
             <div className="col-lg-1"></div>

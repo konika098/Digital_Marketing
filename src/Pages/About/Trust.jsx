@@ -32,7 +32,7 @@ const Trust = () => {
                 user-friendly and optimized for Google's algorithm, our on-site optimization experts clean up the code and copy.`}
               </p>
               <div className="trust-btn">
-                <Link href="/contact">
+                <Link to="/contact">
                   <button className="btn btn-success purple" type="button">
                     Contact Us
                   </button>

@@ -15,7 +15,7 @@ const BlogCard = ({ blog }) => {
             </div>
             <div className="blog-sub-2-parent">
                 <p className="fs-32-c text-start">{blog.title}</p>
-                <Link href="#"><img className="img-fluid" src="/public/assets/angel-icon.png" alt="icon" /></Link>
+                <Link to="/"><img className="img-fluid" src="/public/assets/angel-icon.png" alt="icon" /></Link>
             </div>
         </div>
     );

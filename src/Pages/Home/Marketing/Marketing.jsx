@@ -87,7 +87,7 @@ const Marketing = () => {
                           {section.description}
                         </p>
                         <Link
-                          href={section.link}
+                          to={section.link}
                           className="simple"
                           style={{ marginRight: "10px" }}
                         >
@@ -109,7 +109,7 @@ const Marketing = () => {
                       <p className="text-[#260058]" style={{ padding: "12px 0 18px" }}>
                         {section.description}
                       </p>
-                      <Link href={section.link} className="simple">
+                      <Link to={section.link} className="simple">
                         Learn More <FaLongArrowAltRight />
                       </Link>
                       <div className="loading-img">

@@ -41,7 +41,7 @@ const Choose = () => {
                 <ChooseItem key={index} text={item.text} />
               ))}
 
-              <Link href="#" className="btn btn-success dark dark-3">Discover More</Link>
+              <Link to="/blog" className="btn btn-success dark dark-3">Discover More</Link>
             </div>
 
             <div className="col-lg-1"></div>

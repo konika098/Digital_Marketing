@@ -34,7 +34,7 @@ const Service = () => {
               >
                 {serviceContent?.subtitle}
               </p>
-              <Link href={serviceContent?.buttonLink}>
+              <Link to={serviceContent?.buttonLink}>
                 <p className="simple">
                   {serviceContent?.buttonText}{" "}
                   <i className="fa-solid fa-chevron-right"></i>
@@ -47,7 +47,7 @@ const Service = () => {
         <div className="row">
           {serviceContent?.cards.map((card, index) => (
             <div className="col-md-6 col-lg-4" key={index}>
-              <Link href={card.link}>
+              <Link to={card.link}>
                 <div
                   className="new_card"
                   data-aos="fade-right"

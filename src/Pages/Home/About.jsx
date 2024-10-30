@@ -53,7 +53,7 @@ const About = () => {
                     ))}
                   </div>
                 </div>
-                <Link href={aboutContent?.buttonLink} className="btn btn-success dark">
+                <Link to={aboutContent?.buttonLink} className="btn btn-success dark">
                   {aboutContent?.buttonText}
                 </Link>
               </div>

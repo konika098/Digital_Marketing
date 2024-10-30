@@ -35,7 +35,7 @@ const Banner = () => {
 
               <div className="btn-group">
                 {bannerContent?.buttons.map((button, index) => (
-                  <Link key={index} href={button.link}>
+                  <Link key={index} to={button.link}>
                     <Button variant={button.variant} className={button.className}>
                       {button.text}
                       {button.icon && <i className={button.icon}></i>}

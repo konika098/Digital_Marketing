@@ -39,7 +39,7 @@ const ServiceCards = () => {
               <p style={{ color: '#D0D0D0', paddingBottom: '33px' }} className="fs-18">
                 Our team has a successful track record of helping brands scale profitably based on high-performing strategies.
               </p>
-              <Link href="/about" className='text-white'>Learn More</Link>
+              <Link to="/about" className='text-white'>Learn More</Link>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const ServiceCards = () => {
           <div className="row">
             {serviceContent?.cards.map((card, index) => (
               <div className="col-md-6 col-lg-4" key={index}>
-                <Link href={card.link}>
+                <Link to={card.link}>
                   <div
                     className="new_card"
                     data-aos="fade-right"

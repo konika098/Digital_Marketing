@@ -26,7 +26,7 @@ const Digital = () => {
               <p style={{ color: '#D0D0D0', paddingBottom: '33px' }} className="fs-18">
                 Ullamcorper risus ultrices risus lorem. Mollis libero in pellentesque potenti. Vulputate ut aliquam, consectetur
               </p>
-              <Link href="/"></Link>
+              <Link to="/"></Link>
             </div>
           </div>
         </div>

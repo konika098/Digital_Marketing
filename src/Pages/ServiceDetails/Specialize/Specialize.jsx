@@ -21,7 +21,7 @@ const Specialize = () => {
                 <br className="d-none d-xl-block" />
                 Enthusiastically negotiate highly efficient manufactured products whereas distributed services. Conveniently impact e-business
               </p>
-              <Link href="/contact" className="btn btn-success dark dark-2">
+              <Link to="/contact" className="btn btn-success dark dark-2">
                 Contact Us
               </Link>
             </div>

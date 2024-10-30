@@ -13,7 +13,7 @@ const Contact = () => {
                 {contactData.contactInfo.map((info, index) => (
                   <div className="info-child" key={index}>
                     <i className={`fa-solid ${info.icon}`}></i>
-                    <Link href={info.link}>
+                    <Link to={info.link}>
                       <span className="fs-20-s">{info.label}</span>
                     </Link>
                     {info.description && <p className="fs-italic">{info.description}</p>}

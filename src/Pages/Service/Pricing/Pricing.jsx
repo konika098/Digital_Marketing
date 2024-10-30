@@ -53,7 +53,7 @@ const Pricing = () => {
                       </div>
                     ))}
                   </div>
-                  <Link href="#" className="btn btn-success purple purple-2">
+                  <Link to="/service" className="btn btn-success purple purple-2">
                     CHOOSE PLAN
                   </Link>
                 </div>

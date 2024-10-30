@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({ image, title, text, animation }) => {
   return (
     <div className="col-md-6 col-lg-4">
-      <Link href="/service-details">
+      <Link to="/service-details">
         <div
           className={`new_card`}
           data-aos={animation}
