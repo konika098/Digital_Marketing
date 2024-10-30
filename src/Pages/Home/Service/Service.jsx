@@ -13,9 +13,9 @@ const Service = () => {
       );
   }, []);
 
-  if (!serviceContent) {
-    return <div>Loading...</div>;
-  }
+  // if (!serviceContent) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <section className="service-section overflow-hidden">
@@ -23,7 +23,7 @@ const Service = () => {
         <div className="service-area">
           <div className="row align-items-center">
             <div className="col-lg-5">
-              <p className="fs-52-w res-425">{serviceContent.mainTitle}</p>
+              <p className="fs-52-w res-425">{serviceContent?.mainTitle}</p>
             </div>
             <div className="col-lg-2"></div>
             <div className="col-lg-5">
@@ -31,11 +31,11 @@ const Service = () => {
                 style={{ color: "#D0D0D0", paddingBottom: "33px" }}
                 className="fs-18"
               >
-                {serviceContent.subtitle}
+                {serviceContent?.subtitle}
               </p>
-              <a href={serviceContent.buttonLink}>
+              <a href={serviceContent?.buttonLink}>
                 <p className="simple">
-                  {serviceContent.buttonText}{" "}
+                  {serviceContent?.buttonText}{" "}
                   <i className="fa-solid fa-chevron-right"></i>
                 </p>
               </a>
@@ -44,7 +44,7 @@ const Service = () => {
         </div>
 
         <div className="row">
-          {serviceContent.cards.map((card, index) => (
+          {serviceContent?.cards.map((card, index) => (
             <div className="col-md-6 col-lg-4" key={index}>
               <a href={card.link}>
                 <div

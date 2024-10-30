@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 const Banner = () => {
   const [bannerContent, setBannerContent] = useState(null);
-  
+
   useEffect(() => {
     fetch('/HomeBanner.json')
       .then((response) => response.json())
@@ -10,10 +10,10 @@ const Banner = () => {
       .catch((error) => console.error('Error fetching banner content:', error));
   }, []);
 
- 
-  if (!bannerContent) {
-    return <div>Loading...</div>;
-  }
+
+  // if (!bannerContent) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <div className="hero__section">
@@ -23,18 +23,18 @@ const Banner = () => {
             <Col lg={7}>
               <img className="img-fluid banner-image" src="https://i.ibb.co.com/LZjMbff/growth.png" alt="Growth Image" />
               <h1 className="hero-title">
-                {bannerContent.title}
+                {bannerContent?.title}
                 <span id="bars" className="d-none d-xl-block"></span>
               </h1>
-              <h1 className="hero-title-2">{bannerContent.subtitle}</h1>
+              <h1 className="hero-title-2">{bannerContent?.subtitle}</h1>
 
               <p className="hero-text">
-                {bannerContent.text}
+                {bannerContent?.text}
               </p>
 
               <div className="btn-group">
-                {bannerContent.buttons.map((button, index) => (
-                  <a key={index} href="/service">
+                {bannerContent?.buttons.map((button, index) => (
+                  <a key={index} href={button.link}>
                     <Button variant={button.variant} className={button.className}>
                       {button.text}
                       {button.icon && <i className={button.icon}></i>}
@@ -43,7 +43,7 @@ const Banner = () => {
                 ))}
               </div>
 
-              <p className="client-info">{bannerContent.clientInfo}</p>
+              <p className="client-info">{bannerContent?.clientInfo}</p>
               <div className="client-img">
                 <img className="img-fluid" src="https://i.ibb.co.com/znq60PL/clients.png" alt="Clients" />
               </div>
@@ -51,7 +51,7 @@ const Banner = () => {
 
             <Col lg={5}>
               <div className="hero-left-side position-relative">
-                <img className="img-fluid d-block d-xl-none" src={bannerContent.bgImages.small} alt="Background" />
+                <img className="img-fluid d-block d-xl-none" src={bannerContent?.bgImages.small} alt="Background" />
                 <img className="img-fluid d-none d-xl-block" src="https://i.ibb.co.com/7XC2M4B/BG-1.png" alt="Background Large" />
               </div>
 

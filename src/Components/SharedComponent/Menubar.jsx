@@ -1,22 +1,15 @@
-import { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, Button, Form } from 'react-bootstrap';
-import { useLocation } from 'react-router-dom'; // Import useLocation
 
 const Menubar = () => {
-  const [menuItems, setMenuItems] = useState([]);
-  const [buttonText, setButtonText] = useState('');
-  const location = useLocation(); // Get the current location
+  const menuItems = [
+    { "label": "Home", "href": "/", "isActive": true },
+    { "label": "About us", "href": "/about", "isActive": false },
+    { "label": "Our Services", "href": "/service", "isActive": false },
+    { "label": "Blog", "href": "/blog", "isActive": false },
+    { "label": "Contact", "href": "/contact", "isActive": false }
+  ]
 
-  useEffect(() => {
-    fetch('/MenuItems.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setMenuItems(data.menuItems);
-        setButtonText(data.buttonText);
-      })
-      .catch((error) => console.error('Error fetching menu items:', error));
-  }, []);
-
+  const buttonText = "Get Started";
   return (
     <div className="menubar__section">
       <Container>
@@ -36,7 +29,7 @@ const Menubar = () => {
                   <Nav.Link
                     key={index}
                     href={item.href}
-                    className={location.pathname === item.href ? 'active' : ''} // Add active class based on location
+                    className={location.pathname === item.href ? 'active' : ''} 
                   >
                     {item.label}
                   </Nav.Link>

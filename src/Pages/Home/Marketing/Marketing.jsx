@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 
 const Marketing = () => {
   const [marketingData, setMarketingData] = useState(null);
@@ -21,9 +21,9 @@ const Marketing = () => {
       .catch((error) => console.error("Error fetching marketing data:", error));
   }, []);
 
-  if (!marketingData) {
-    return <div>Loading...</div>;
-  }
+  // if (!marketingData) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <div className="marketing-section">
@@ -38,7 +38,7 @@ const Marketing = () => {
             data-aos-easing="ease-in-out"
             data-aos-once="false"
           >
-            {marketingData.heading.split("\n").map((line, index) => (
+            {marketingData?.heading.split("\n").map((line, index) => (
               <span key={index}>
                 {line}
                 <br className={index === 0 ? "d-none d-md-block" : ""} />
@@ -54,7 +54,7 @@ const Marketing = () => {
             data-aos-easing="ease-in-out"
             data-aos-once="false"
           >
-            {marketingData.subheading.split("\n").map((line, index) => (
+            {marketingData?.subheading.split("\n").map((line, index) => (
               <span key={index}>
                 {line}
                 <br className={index === 0 ? "d-none d-lg-block" : ""} />
@@ -62,7 +62,7 @@ const Marketing = () => {
             ))}
           </p>
           <div className="row">
-            {marketingData.sections.map((section, index) => (
+            {marketingData?.sections.map((section, index) => (
               <div
                 key={index}
                 data-aos="fade-in"
@@ -71,12 +71,11 @@ const Marketing = () => {
                 data-aos-duration="1300"
                 data-aos-easing="ease-in-out"
                 data-aos-once="false"
-                className={`col-lg-${
-                  index === 0 ? "5" : index === 1 ? "7" : "12"
-                }`}
+                className={`col-lg-${index === 0 ? "5" : index === 1 ? "7" : "12"
+                  }`}
               >
                 <div className={`section-${index + 1}`}>
-                  {index === marketingData.sections.length - 1 ? (
+                  {index === marketingData?.sections.length - 1 ? (
                     <div style={{ display: "flex", alignItems: "center" }}>
                       <div style={{ display: "flex", flexDirection: "column" }}>
                         <h5 className="fs-32-w">{section.title}</h5>
@@ -97,7 +96,7 @@ const Marketing = () => {
                       <div style={{ width: "618px" }}>
                         <img
                           className="img-fluid w-100"
-                          style={{ width: "100px", marginTop:"20px" }}
+                          style={{ width: "100px", marginTop: "20px" }}
                           src={section.image}
                           alt="img"
                         />

@@ -11,17 +11,17 @@ import Email from '../../Components/Email';
 
 const Home = () => {
     return (
-       <>
-       <Banner/>
-       <Service/>
-       <About/>
-       <Counting/>
-       <Choose/>
-       <Marketing/>
-       <Testimonial/>
-       <Blog/>
-       <Email/>
-       </>
+        <>
+            <Banner />
+            <Service />
+            <About />
+            <Counting />
+            <Choose />
+            <Marketing />
+            <Testimonial />
+            <Blog />
+            <Email />
+        </>
     );
 };
 

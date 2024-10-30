@@ -1,12 +1,15 @@
-import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import Main from "./Layout/Main";
-import About from "./Pages/About/About";
-import Blog from "./Pages/Blog/Blog";
-import Service from "./Pages/Service/Service";
-import ServiceDetails from "./Pages/ServiceDetails/ServiceDetails";
-import Contact from "./Pages/Contact/Contact";
+import './App.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './Pages/Home/Home';
+import Main from './Layout/Main';
+import About from './Pages/About/About';
+import Blog from './Pages/Blog/Blog';
+import Service from './Pages/Service/Service';
+import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
+import Contact from './Pages/Contact/Contact';
 
 const router = createBrowserRouter([
   {
@@ -15,29 +18,29 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <Home />
       },
       {
         path: "/about",
-        element: <About />,
+        element: <About />
       },
       {
         path: "/blog",
-        element: <Blog />,
+        element: <Blog />
       },
       {
         path: "/service",
-        element: <Service />,
+        element: <Service />
       },
       {
         path: "/service-details",
-        element: <ServiceDetails />,
+        element: <ServiceDetails />
       },
       {
         path: "/contact",
-        element: <Contact />,
-      },
-    ],
+        element: <Contact />
+      }
+    ]
   },
 ]);
 
@@ -46,7 +49,7 @@ function App() {
     <>
       <RouterProvider router={router} />
     </>
-  );
+  )
 }
 
 export default App;

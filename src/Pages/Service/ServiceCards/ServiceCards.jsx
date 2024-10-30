@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const ServiceCards = () => {
   useEffect(() => {
-    AOS.init(); 
+    AOS.init();
   }, []);
 
   const [serviceContent, setServiceContent] = useState(null);
@@ -19,9 +19,9 @@ const ServiceCards = () => {
       );
   }, []);
 
-  if (!serviceContent) {
-    return <div>Loading...</div>;
-  }
+  // if (!serviceContent) {
+  //   return <div>Loading...</div>;
+  // }
 
   return (
     <section className="service-section overflow-hidden">
@@ -43,38 +43,38 @@ const ServiceCards = () => {
           </div>
         </div>
         <div className="row g-4">
-        <div className="row">
-          {serviceContent.cards.map((card, index) => (
-            <div className="col-md-6 col-lg-4" key={index}>
-              <a href={card.link}>
-                <div
-                  className="new_card"
-                  data-aos="fade-right"
-                  data-aos-offset="200"
-                  data-aos-delay="50"
-                  data-aos-duration="1200"
-                  data-aos-easing="ease-in-out"
-                  data-aos-once="false"
-                >
-                  <div className="new-card-img-top">
-                    <img
-                      className="img-fluid"
-                      src={card.image}
-                      alt={card.title}
+          <div className="row">
+            {serviceContent?.cards.map((card, index) => (
+              <div className="col-md-6 col-lg-4" key={index}>
+                <a href={card.link}>
+                  <div
+                    className="new_card"
+                    data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1200"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                  >
+                    <div className="new-card-img-top">
+                      <img
+                        className="img-fluid"
+                        src={card.image}
+                        alt={card.title}
+                      />
+                    </div>
+                    <h5 className="card-title text-white">{card.title}</h5>
+                    <p
+                      className="card-text"
+                      dangerouslySetInnerHTML={{ __html: card.text }}
                     />
-                  </div>
-                  <h5 className="card-title text-white">{card.title}</h5>
-                  <p
-                    className="card-text"
-                    dangerouslySetInnerHTML={{ __html: card.text }}
-                  />
 
-                  <FaArrowRight className="arrow" />
-                </div>
-              </a>
-            </div>
-          ))}
-        </div>
+                    <FaArrowRight className="arrow" />
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
