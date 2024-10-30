@@ -17,7 +17,8 @@ const Testimonial = () => {
           <div className="test-sub">
             <span className="about-sub fs-18">Testimonial</span>
             <h3
-              className="test-sub fs-52-c"
+
+              className="test-sub fs-52-c" style={{ margin: '30px 0' }}
               data-aos="fade-up"
               data-aos-offset="200"
               data-aos-delay="50"

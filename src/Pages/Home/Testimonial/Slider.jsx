@@ -9,7 +9,7 @@ import testimonialsData from "/public/Testimonial.json";
 
 export default function Slider() {
   useEffect(() => {
-    AOS.refresh(); // Refresh AOS after Swiper renders
+    AOS.refresh(); 
   }, []);
 
   return (

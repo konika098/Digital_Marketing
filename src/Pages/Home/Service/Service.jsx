@@ -35,7 +35,7 @@ const Service = () => {
                 {serviceContent?.subtitle}
               </p>
               <Link to={serviceContent?.buttonLink}>
-                <p className="simple">
+                <p className="simple text-white">
                   {serviceContent?.buttonText}{" "}
                   <i className="fa-solid fa-chevron-right"></i>
                 </p>

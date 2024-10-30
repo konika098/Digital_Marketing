@@ -60,7 +60,7 @@ const Trust = () => {
                   data-aos-delay="50"
                   data-aos-duration="1300"
                   data-aos-easing="ease-in-out"
-                  className="fs-18 about-text"
+                  className="fs-18 about-text text-white"
                 >
                   Your Trust is Our Priority.
                 </p>
@@ -79,7 +79,7 @@ const Trust = () => {
                   data-aos-easing="ease-in-out"
                 />
                 <p
-                  className="fs-18 about-text"
+                  className="fs-18 about-text text-white"
                   data-aos="fade-up"
                   data-aos-offset="200"
                   data-aos-delay="50"

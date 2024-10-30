@@ -1,21 +1,35 @@
 import { Link } from "react-router-dom";
 
-const Pagination = () => {
+const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+    const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
+
     return (
-        <nav aria-label="Page navigation example">
+        <nav aria-label="Page navigation">
             <ul className="pagination">
-                <li className="page-item">
-                    <Link className="page-link" to="#" aria-label="Previous">
+                <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
+                    <Link
+                        className="page-link"
+                        to="#"
+                        onClick={() => onPageChange(currentPage - 1)}
+                        aria-label="Previous"
+                    >
                         <span aria-hidden="true">&laquo;</span>
                     </Link>
                 </li>
-                <li className="page-item"><Link className="page-link active" to="#">1</Link></li>
-                <li className="page-item"><Link className="page-link" to="#">2</Link></li>
-                <li className="page-item"><Link className="page-link" to="#">3</Link></li>
-                <li className="page-item"><Link className="page-link" to="#">4</Link></li>
-                <li className="page-item"><Link className="page-link" to="#">5</Link></li>
-                <li className="page-item">
-                    <Link className="page-link" to="#" aria-label="Next">
+                {pageNumbers.map(number => (
+                    <li key={number} className={`page-item ${number === currentPage ? 'active' : ''}`}>
+                        <Link className="page-link" to="#" onClick={() => onPageChange(number)}>
+                            {number}
+                        </Link>
+                    </li>
+                ))}
+                <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
+                    <Link
+                        className="page-link"
+                        to="#"
+                        onClick={() => onPageChange(currentPage + 1)}
+                        aria-label="Next"
+                    >
                         <span aria-hidden="true">&raquo;</span>
                     </Link>
                 </li>
