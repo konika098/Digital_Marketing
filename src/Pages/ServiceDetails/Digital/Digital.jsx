@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Digital = () => {
   const [cards, setCards] = useState([]);
@@ -25,7 +26,7 @@ const Digital = () => {
               <p style={{ color: '#D0D0D0', paddingBottom: '33px' }} className="fs-18">
                 Ullamcorper risus ultrices risus lorem. Mollis libero in pellentesque potenti. Vulputate ut aliquam, consectetur
               </p>
-              <a href="#"></a>
+              <Link href="/"></Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import  { useEffect, useState } from "react";
 import pricingData from "/public/Pricing.json"; 
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const [plans, setPlans] = useState([]);
@@ -52,9 +53,9 @@ const Pricing = () => {
                       </div>
                     ))}
                   </div>
-                  <a href="#" className="btn btn-success purple purple-2">
+                  <Link href="#" className="btn btn-success purple purple-2">
                     CHOOSE PLAN
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

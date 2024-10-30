@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const [aboutContent, setAboutContent] = useState(null);
@@ -52,9 +53,9 @@ const About = () => {
                     ))}
                   </div>
                 </div>
-                <a href={aboutContent?.buttonLink} className="btn btn-success dark">
+                <Link href={aboutContent?.buttonLink} className="btn btn-success dark">
                   {aboutContent?.buttonText}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

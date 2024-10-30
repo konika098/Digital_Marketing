@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Choose = () => {
   const [chooseData, setChooseData] = useState(null);
@@ -41,7 +42,7 @@ const Choose = () => {
                 </div>
               ))}
 
-              <a href="/contact" className="btn btn-success dark">Contact Us</a>
+              <Link href="/contact" className="btn btn-success dark">Contact Us</Link>
             </div>
 
             <div className="col-lg-1"></div>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Service = () => {
   const [serviceContent, setServiceContent] = useState(null);
@@ -33,12 +34,12 @@ const Service = () => {
               >
                 {serviceContent?.subtitle}
               </p>
-              <a href={serviceContent?.buttonLink}>
+              <Link href={serviceContent?.buttonLink}>
                 <p className="simple">
                   {serviceContent?.buttonText}{" "}
                   <i className="fa-solid fa-chevron-right"></i>
                 </p>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -46,7 +47,7 @@ const Service = () => {
         <div className="row">
           {serviceContent?.cards.map((card, index) => (
             <div className="col-md-6 col-lg-4" key={index}>
-              <a href={card.link}>
+              <Link href={card.link}>
                 <div
                   className="new_card"
                   data-aos="fade-right"
@@ -71,7 +72,7 @@ const Service = () => {
 
                   <FaArrowRight className="arrow" />
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>

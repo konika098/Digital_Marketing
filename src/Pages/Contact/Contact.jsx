@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import contactData from '/public/Contact.json';
 
 const Contact = () => {
@@ -12,9 +13,9 @@ const Contact = () => {
                 {contactData.contactInfo.map((info, index) => (
                   <div className="info-child" key={index}>
                     <i className={`fa-solid ${info.icon}`}></i>
-                    <a href={info.link}>
+                    <Link href={info.link}>
                       <span className="fs-20-s">{info.label}</span>
-                    </a>
+                    </Link>
                     {info.description && <p className="fs-italic">{info.description}</p>}
                   </div>
                 ))}

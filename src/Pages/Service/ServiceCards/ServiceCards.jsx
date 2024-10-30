@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const ServiceCards = () => {
   useEffect(() => {
@@ -38,7 +39,7 @@ const ServiceCards = () => {
               <p style={{ color: '#D0D0D0', paddingBottom: '33px' }} className="fs-18">
                 Our team has a successful track record of helping brands scale profitably based on high-performing strategies.
               </p>
-              <a href="/about" className='text-white'>Learn More</a>
+              <Link href="/about" className='text-white'>Learn More</Link>
             </div>
           </div>
         </div>
@@ -46,7 +47,7 @@ const ServiceCards = () => {
           <div className="row">
             {serviceContent?.cards.map((card, index) => (
               <div className="col-md-6 col-lg-4" key={index}>
-                <a href={card.link}>
+                <Link href={card.link}>
                   <div
                     className="new_card"
                     data-aos="fade-right"
@@ -71,7 +72,7 @@ const ServiceCards = () => {
 
                     <FaArrowRight className="arrow" />
                   </div>
-                </a>
+                </Link>
               </div>
             ))}
           </div>

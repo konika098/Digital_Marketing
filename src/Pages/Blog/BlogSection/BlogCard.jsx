@@ -1,4 +1,7 @@
 /* eslint-disable react/prop-types */
+
+import { Link } from "react-router-dom";
+
 // eslint-disable-next-line react/prop-types
 const BlogCard = ({ blog }) => {
     return (
@@ -12,7 +15,7 @@ const BlogCard = ({ blog }) => {
             </div>
             <div className="blog-sub-2-parent">
                 <p className="fs-32-c text-start">{blog.title}</p>
-                <a href="#"><img className="img-fluid" src="/public/assets/angel-icon.png" alt="icon" /></a>
+                <Link href="#"><img className="img-fluid" src="/public/assets/angel-icon.png" alt="icon" /></Link>
             </div>
         </div>
     );

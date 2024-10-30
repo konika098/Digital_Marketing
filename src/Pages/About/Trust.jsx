@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
+import { Link } from "react-router-dom";
 
 const Trust = () => {
   useEffect(() => {
@@ -31,11 +32,11 @@ const Trust = () => {
                 user-friendly and optimized for Google's algorithm, our on-site optimization experts clean up the code and copy.`}
               </p>
               <div className="trust-btn">
-                <a href="/contact">
+                <Link href="/contact">
                   <button className="btn btn-success purple" type="button">
                     Contact Us
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

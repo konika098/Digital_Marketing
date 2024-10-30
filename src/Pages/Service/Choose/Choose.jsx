@@ -1,5 +1,6 @@
 import  { useEffect, useState } from 'react';
 import ChooseItem from './ChooseItem';
+import { Link } from 'react-router-dom';
 
 
 const Choose = () => {
@@ -40,7 +41,7 @@ const Choose = () => {
                 <ChooseItem key={index} text={item.text} />
               ))}
 
-              <a href="#" className="btn btn-success dark dark-3">Discover More</a>
+              <Link href="#" className="btn btn-success dark dark-3">Discover More</Link>
             </div>
 
             <div className="col-lg-1"></div>

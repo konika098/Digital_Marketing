@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Marketing = () => {
   const [marketingData, setMarketingData] = useState(null);
@@ -85,13 +86,13 @@ const Marketing = () => {
                         >
                           {section.description}
                         </p>
-                        <a
+                        <Link
                           href={section.link}
                           className="simple"
                           style={{ marginRight: "10px" }}
                         >
                           Learn More <FaLongArrowAltRight />
-                        </a>
+                        </Link>
                       </div>
                       <div style={{ width: "618px" }}>
                         <img
@@ -108,9 +109,9 @@ const Marketing = () => {
                       <p className="text-[#260058]" style={{ padding: "12px 0 18px" }}>
                         {section.description}
                       </p>
-                      <a href={section.link} className="simple">
+                      <Link href={section.link} className="simple">
                         Learn More <FaLongArrowAltRight />
-                      </a>
+                      </Link>
                       <div className="loading-img">
                         <img
                           className="img-fluid w-100"

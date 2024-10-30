@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Specialize = () => {
   return (
     <div className="specialize-section">
@@ -19,9 +21,9 @@ const Specialize = () => {
                 <br className="d-none d-xl-block" />
                 Enthusiastically negotiate highly efficient manufactured products whereas distributed services. Conveniently impact e-business
               </p>
-              <a href="/contact" className="btn btn-success dark dark-2">
+              <Link href="/contact" className="btn btn-success dark dark-2">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

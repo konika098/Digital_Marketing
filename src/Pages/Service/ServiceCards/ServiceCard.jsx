@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 
 
 // eslint-disable-next-line react/prop-types
 const ServiceCard = ({ image, title, text, animation }) => {
   return (
     <div className="col-md-6 col-lg-4">
-      <a href="/service-details">
+      <Link href="/service-details">
         <div
           className={`new_card`}
           data-aos={animation}
@@ -21,7 +22,7 @@ const ServiceCard = ({ image, title, text, animation }) => {
           <p className="card-text">{text}</p>
           <i className="fa-solid fa-arrow-right-long"></i>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

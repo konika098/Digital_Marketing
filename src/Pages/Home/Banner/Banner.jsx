@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const Banner = () => {
   const [bannerContent, setBannerContent] = useState(null);
 
@@ -34,12 +35,12 @@ const Banner = () => {
 
               <div className="btn-group">
                 {bannerContent?.buttons.map((button, index) => (
-                  <a key={index} href={button.link}>
+                  <Link key={index} href={button.link}>
                     <Button variant={button.variant} className={button.className}>
                       {button.text}
                       {button.icon && <i className={button.icon}></i>}
                     </Button>
-                  </a>
+                  </Link>
                 ))}
               </div>
 

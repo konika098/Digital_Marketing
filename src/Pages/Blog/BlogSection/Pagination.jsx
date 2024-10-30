@@ -1,21 +1,23 @@
+import { Link } from "react-router-dom";
+
 const Pagination = () => {
     return (
         <nav aria-label="Page navigation example">
             <ul className="pagination">
                 <li className="page-item">
-                    <a className="page-link" href="#" aria-label="Previous">
+                    <Link className="page-link" href="#" aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
-                    </a>
+                    </Link>
                 </li>
-                <li className="page-item"><a className="page-link active" href="#">1</a></li>
-                <li className="page-item"><a className="page-link" href="#">2</a></li>
-                <li className="page-item"><a className="page-link" href="#">3</a></li>
-                <li className="page-item"><a className="page-link" href="#">4</a></li>
-                <li className="page-item"><a className="page-link" href="#">5</a></li>
+                <li className="page-item"><Link className="page-link active" href="#">1</Link></li>
+                <li className="page-item"><Link className="page-link" href="#">2</Link></li>
+                <li className="page-item"><Link className="page-link" href="#">3</Link></li>
+                <li className="page-item"><Link className="page-link" href="#">4</Link></li>
+                <li className="page-item"><Link className="page-link" href="#">5</Link></li>
                 <li className="page-item">
-                    <a className="page-link" href="#" aria-label="Next">
+                    <Link className="page-link" href="#" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </nav>
