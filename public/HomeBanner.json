@@ -7,13 +7,13 @@
       { "text": "Pricing", "link": "/service", "variant": "success", "className": "light", "icon": "fa-solid fa-chevron-right" }
     ],
     "clientInfo": "Trusted by our Clients",
-    "clientImage": "/public/assets/clients.png",
+    "clientImage": "https://i.postimg.cc/ncxv2zML/clients.png",
     "bgImages": {
-      "small": "/public/assets/bg.png",
-      "large": "/public/assets/BG-1.png"
+      "small": "https://i.postimg.cc/BnQ2WVT9/bg.png",
+      "large": "https://i.postimg.cc/X7g9zbyk/BG-1.png"
     },
-    "partnerImage": "/public/assets/bg-img-part-1.png",
-    "partImage": "/public/assets/bg-img-part-2.png",
-    "growthImage": "/public/assets/growth-1.png"
+    "partnerImage": "https://i.postimg.cc/wjfL9Q2t/bg-img-part-1.png",
+    "partImage": "https://i.postimg.cc/hGNmd4Hc/bg-img-part-2.png",
+    "growthImage": "https://i.postimg.cc/C5gfcPh2/growth-1.png"
   }
   
